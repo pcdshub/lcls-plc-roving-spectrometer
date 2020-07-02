@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.12">
+  <POU Name="Main" Id="{132555af-70b5-499a-bab7-29807b28ed6c}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM Main
+VAR
+	//declare motion stage objects to connect with io
+	M1 : DUT_MotionStage;
+	M2 : DUT_MotionStage;
+	M3 : DUT_MotionStage;
+	M4 : DUT_MotionStage;
+	M5 : DUT_MotionStage;
+	M6 : DUT_MotionStage;
+	M7 : DUT_MotionStage;
+	M8 : DUT_MotionStage;
+	//declare SIMULATED axes
+	fbMotion1 : FB_MotionStageSim;  
+	fbMotion2 : FB_MotionStageSim;
+	fbMotion3 : FB_MotionStageSim;
+	fbMotion4 : FB_MotionStageSim;
+	fbMotion5 : FB_MotionStageSim;
+	fbMotion6 : FB_MotionStageSim;
+	fbMotion7 : FB_MotionStageSim;
+	fbMotion8 : FB_MotionStageSim;
+END_VAR
+
+    ]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[//invoke axes
+fbMotion1(stMotionStage:=M1);
+fbMotion2(stMotionStage:=M2);
+fbMotion3(stMotionStage:=M3);
+fbMotion4(stMotionStage:=M4);
+fbMotion5(stMotionStage:=M5);
+fbMotion6(stMotionStage:=M6);
+fbMotion7(stMotionStage:=M7);
+fbMotion8(stMotionStage:=M8);
+
+]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
