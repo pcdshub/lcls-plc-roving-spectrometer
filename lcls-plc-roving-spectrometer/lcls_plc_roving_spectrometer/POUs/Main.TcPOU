@@ -5,43 +5,43 @@
 VAR
 	//declare motion stage objects to connect with io
 	{attribute 'pytmc' := 'pv: HXX:HXSS:ROV:MMS:ALL_H'}
-	{attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[EL7041_ROV_ALL_H]^STM Status^Status^Digital input 1;
-                              .bLimitBackwardEnable := TIIB[EL7041_ROV_ALL_H]^STM Status^Status^Digital input 3
+	{attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^E2 (EL1088)^Channel 1^Input;
+                              .bLimitBackwardEnable := TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^E2 (EL1088)^Channel 3^Input
     '}
 	M1 : DUT_MotionStage;
 	{attribute 'pytmc' := 'pv: HXX:HXSS:ROV:MMS:ALL_V'}
-	{attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[EL7041_ROV_ALL_V]^STM Status^Status^Digital input 2;
-                              .bLimitBackwardEnable := TIIB[EL7041_ROV_ALL_V]^STM Status^Status^Digital input 4
+	{attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^E2 (EL1088)^Channel 2^Input;
+                              .bLimitBackwardEnable := TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^E2 (EL1088)^Channel 4^Input
     '}
 	M2 : DUT_MotionStage;
 	{attribute 'pytmc' := 'pv: HXX:HXSS:ROV:MMS:XTAL_TH'}
-	{attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[EL7041_ROV_XTAL_TH]^STM Status^Status^Digital input 1;
-                              .bLimitBackwardEnable := TIIB[EL7041_ROV_XTAL_TH]^STM Status^Status^Digital input 3
+	{attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^E5 (EL1088)^Channel 1^Input;
+                              .bLimitBackwardEnable := TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^E5 (EL1088)^Channel 3^Input
     '}
 	M3 : DUT_MotionStage;
 	{attribute 'pytmc' := 'pv: HXX:HXSS:ROV:MMS:XTAL_TTH'}
-	{attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[EL7041_ROV_XTAL_TTH]^STM Status^Status^Digital input 2;
-                              .bLimitBackwardEnable := TIIB[EL7041_ROV_XTAL_TTH]^STM Status^Status^Digital input 4
+	{attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^E5 (EL1088)^Channel 2^Input;
+                              .bLimitBackwardEnable := TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^E5 (EL1088)^Channel 4^Input
     '}
 	M4 : DUT_MotionStage;
 	{attribute 'pytmc' := 'pv: HXX:HXSS:ROV:MMS:XTAL_H'}
-	{attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[EL7041_ROV_XTAL_H]^STM Status^Status^Digital input 1;
-                              .bLimitBackwardEnable := TIIB[EL7041_ROV_XTAL_H]^STM Status^Status^Digital input 3
+	{attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^E8 (EL1088)^Channel 1^Input;
+                              .bLimitBackwardEnable := TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^E8 (EL1088)^Channel 3^Input
     '}
 	M5 : DUT_MotionStage;
 	{attribute 'pytmc' := 'pv: HXX:HXSS:ROV:MMS:XTAL_V'}
-	{attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[EL7041_ROV_XTAL_V]^STM Status^Status^Digital input 2;
-                              .bLimitBackwardEnable := TIIB[EL7041_ROV_XTAL_V]^STM Status^Status^Digital input 4
+	{attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^E8 (EL1088)^Channel 2^Input;
+                              .bLimitBackwardEnable := TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^E8 (EL1088)^Channel 4^Input
     '}
 	M6 : DUT_MotionStage;
 	{attribute 'pytmc' := 'pv: HXX:HXSS:ROV:MMS:DET_H}
-	{attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[EL7041_ROV_DET_H]^STM Status^Status^Digital input 1;
-                              .bLimitBackwardEnable := TIIB[EL7041_ROV_DET_H]^STM Status^Status^Digital input 3
+	{attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^E11 (EL1088)^Channel 1^Input;
+                              .bLimitBackwardEnable := TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^E11 (EL1088)^Channel 3^Input
     '}
 	M7 : DUT_MotionStage;
 	{attribute 'pytmc' := 'pv: HXX:HXSS:ROV:MMS:DET_V'}
-	{attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[EL7041_ROV_DET_V]^STM Status^Status^Digital input 2;
-                              .bLimitBackwardEnable := TIIB[EL7041_ROV_DET_V]^STM Status^Status^Digital input 4
+	{attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^E11 (EL1088)^Channel 2^Input;
+                              .bLimitBackwardEnable := TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^E11 (EL1088)^Channel 4^Input
     '}
 	M8 : DUT_MotionStage;
 	//declare axes
