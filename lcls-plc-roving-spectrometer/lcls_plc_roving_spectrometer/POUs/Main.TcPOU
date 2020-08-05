@@ -1,26 +1,58 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.12">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.2">
   <POU Name="Main" Id="{132555af-70b5-499a-bab7-29807b28ed6c}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM Main
 VAR
 	//declare motion stage objects to connect with io
+	{attribute 'pytmc' := 'pv: HXX:HXSS:ROV:MMS:ALL_H'}
+	{attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[EL7041_ROV_ALL_H]^STM Status^Status^Digital input 1;
+                              .bLimitBackwardEnable := TIIB[EL7041_ROV_ALL_H]^STM Status^Status^Digital input 3
+    '}
 	M1 : DUT_MotionStage;
+	{attribute 'pytmc' := 'pv: HXX:HXSS:ROV:MMS:ALL_V'}
+	{attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[EL7041_ROV_ALL_V]^STM Status^Status^Digital input 2;
+                              .bLimitBackwardEnable := TIIB[EL7041_ROV_ALL_V]^STM Status^Status^Digital input 4
+    '}
 	M2 : DUT_MotionStage;
+	{attribute 'pytmc' := 'pv: HXX:HXSS:ROV:MMS:XTAL_TH'}
+	{attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[EL7041_ROV_XTAL_TH]^STM Status^Status^Digital input 1;
+                              .bLimitBackwardEnable := TIIB[EL7041_ROV_XTAL_TH]^STM Status^Status^Digital input 3
+    '}
 	M3 : DUT_MotionStage;
+	{attribute 'pytmc' := 'pv: HXX:HXSS:ROV:MMS:XTAL_TTH'}
+	{attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[EL7041_ROV_XTAL_TTH]^STM Status^Status^Digital input 2;
+                              .bLimitBackwardEnable := TIIB[EL7041_ROV_XTAL_TTH]^STM Status^Status^Digital input 4
+    '}
 	M4 : DUT_MotionStage;
+	{attribute 'pytmc' := 'pv: HXX:HXSS:ROV:MMS:XTAL_H'}
+	{attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[EL7041_ROV_XTAL_H]^STM Status^Status^Digital input 1;
+                              .bLimitBackwardEnable := TIIB[EL7041_ROV_XTAL_H]^STM Status^Status^Digital input 3
+    '}
 	M5 : DUT_MotionStage;
+	{attribute 'pytmc' := 'pv: HXX:HXSS:ROV:MMS:XTAL_V'}
+	{attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[EL7041_ROV_XTAL_V]^STM Status^Status^Digital input 2;
+                              .bLimitBackwardEnable := TIIB[EL7041_ROV_XTAL_V]^STM Status^Status^Digital input 4
+    '}
 	M6 : DUT_MotionStage;
+	{attribute 'pytmc' := 'pv: HXX:HXSS:ROV:MMS:DET_H}
+	{attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[EL7041_ROV_DET_H]^STM Status^Status^Digital input 1;
+                              .bLimitBackwardEnable := TIIB[EL7041_ROV_DET_H]^STM Status^Status^Digital input 3
+    '}
 	M7 : DUT_MotionStage;
+	{attribute 'pytmc' := 'pv: HXX:HXSS:ROV:MMS:DET_V'}
+	{attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIIB[EL7041_ROV_DET_V]^STM Status^Status^Digital input 2;
+                              .bLimitBackwardEnable := TIIB[EL7041_ROV_DET_V]^STM Status^Status^Digital input 4
+    '}
 	M8 : DUT_MotionStage;
-	//declare SIMULATED axes
-	fbMotion1 : FB_MotionStageSim;  
-	fbMotion2 : FB_MotionStageSim;
-	fbMotion3 : FB_MotionStageSim;
-	fbMotion4 : FB_MotionStageSim;
-	fbMotion5 : FB_MotionStageSim;
-	fbMotion6 : FB_MotionStageSim;
-	fbMotion7 : FB_MotionStageSim;
-	fbMotion8 : FB_MotionStageSim;
+	//declare axes
+	fbMotion1 : FB_MotionStage;  
+	fbMotion2 : FB_MotionStage;
+	fbMotion3 : FB_MotionStage;
+	fbMotion4 : FB_MotionStage;
+	fbMotion5 : FB_MotionStage;
+	fbMotion6 : FB_MotionStage;
+	fbMotion7 : FB_MotionStage;
+	fbMotion8 : FB_MotionStage;
 END_VAR
 
     ]]></Declaration>
@@ -37,5 +69,9 @@ fbMotion8(stMotionStage:=M8);
 
 ]]></ST>
     </Implementation>
+    <LineIds Name="Main">
+      <LineId Id="3" Count="9" />
+      <LineId Id="2" Count="0" />
+    </LineIds>
   </POU>
 </TcPlcObject>
