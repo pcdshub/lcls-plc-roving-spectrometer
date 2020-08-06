@@ -34,7 +34,7 @@ VAR
                               .bLimitBackwardEnable := TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^E8 (EL1088)^Channel 4^Input
     '}
 	M6 : DUT_MotionStage;
-	{attribute 'pytmc' := 'pv: HXX:HXSS:ROV:MMS:DET_H}
+	{attribute 'pytmc' := 'pv: HXX:HXSS:ROV:MMS:DET_H'}
 	{attribute 'TcLinkTo' := '.bLimitForwardEnable  := TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^E11 (EL1088)^Channel 1^Input;
                               .bLimitBackwardEnable := TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^E11 (EL1088)^Channel 3^Input
     '}
@@ -67,11 +67,31 @@ fbMotion6(stMotionStage:=M6);
 fbMotion7(stMotionStage:=M7);
 fbMotion8(stMotionStage:=M8);
 
-]]></ST>
+//.bHardwareEnable
+M1.bHardwareEnable:=TRUE;
+M2.bHardwareEnable:=TRUE;
+M3.bHardwareEnable:=TRUE;
+M4.bHardwareEnable:=TRUE;
+M5.bHardwareEnable:=TRUE;
+M6.bHardwareEnable:=TRUE;
+M7.bHardwareEnable:=TRUE;
+M8.bHardwareEnable:=TRUE;
+
+//.bPowerSelf
+M1.bPowerSelf:=TRUE;
+M2.bPowerSelf:=TRUE;
+M3.bPowerSelf:=TRUE;
+M4.bPowerSelf:=TRUE;
+M5.bPowerSelf:=TRUE;
+M6.bPowerSelf:=TRUE;
+M7.bPowerSelf:=TRUE;
+M8.bPowerSelf:=TRUE;
+
+//Limit switches
+M3.bLimitBackwardEnable:=TRUE;
+M3.bLimitForwardEnable:=TRUE;
+M4.bLimitBackwardEnable:=TRUE;
+M4.bLimitForwardEnable:=TRUE;]]></ST>
     </Implementation>
-    <LineIds Name="Main">
-      <LineId Id="3" Count="9" />
-      <LineId Id="2" Count="0" />
-    </LineIds>
   </POU>
 </TcPlcObject>
