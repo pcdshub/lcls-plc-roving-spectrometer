@@ -1,0 +1,154 @@
+
+NC Settings
+-----------
+
+.. csv-table::
+    :header: Axis ID, Name
+    :align: center
+
+        1, ALL_H
+        2, ALL_V
+        3, XTAL_TH
+        4, XTAL_TTH
+        5, XTAL_H
+        6, XTAL_V
+        7, DET_H
+        8, DET_V
+
+
+
+Axis 1: ALL_H
+^^^^^^^^^^^^^
+
+.. csv-table::
+    :header: Setting, Value
+    :align: center
+
+    Axis ID, 1
+    Name, ALL_H
+    AxisType, 1
+    CreateSymbols, true
+    Enc:EncType, 1
+    Id, 1
+    OtherSettings:AllowMotionCmdToSlave, true
+
+
+
+Axis 2: ALL_V
+^^^^^^^^^^^^^
+
+.. csv-table::
+    :header: Setting, Value
+    :align: center
+
+    Axis ID, 2
+    Name, ALL_V
+    AxisType, 1
+    CreateSymbols, true
+    Enc:EncType, 1
+    Id, 2
+    OtherSettings:AllowMotionCmdToSlave, true
+
+
+
+Axis 3: XTAL_TH
+^^^^^^^^^^^^^^^
+
+.. csv-table::
+    :header: Setting, Value
+    :align: center
+
+    Axis ID, 3
+    Name, XTAL_TH
+    AxisType, 1
+    CreateSymbols, true
+    Enc:EncType, 1
+    Id, 3
+    OtherSettings:AllowMotionCmdToSlave, true
+
+
+
+Axis 4: XTAL_TTH
+^^^^^^^^^^^^^^^^
+
+.. csv-table::
+    :header: Setting, Value
+    :align: center
+
+    Axis ID, 4
+    Name, XTAL_TTH
+    AxisType, 1
+    CreateSymbols, true
+    Enc:EncType, 1
+    Id, 4
+    OtherSettings:AllowMotionCmdToSlave, true
+
+
+
+Axis 5: XTAL_H
+^^^^^^^^^^^^^^
+
+.. csv-table::
+    :header: Setting, Value
+    :align: center
+
+    Axis ID, 5
+    Name, XTAL_H
+    AxisType, 1
+    CreateSymbols, true
+    Enc:EncType, 1
+    Id, 5
+    OtherSettings:AllowMotionCmdToSlave, true
+
+
+
+Axis 6: XTAL_V
+^^^^^^^^^^^^^^
+
+.. csv-table::
+    :header: Setting, Value
+    :align: center
+
+    Axis ID, 6
+    Name, XTAL_V
+    AxisType, 1
+    CreateSymbols, true
+    Enc:EncType, 1
+    Id, 6
+    OtherSettings:AllowMotionCmdToSlave, true
+
+
+
+Axis 7: DET_H
+^^^^^^^^^^^^^
+
+.. csv-table::
+    :header: Setting, Value
+    :align: center
+
+    Axis ID, 7
+    Name, DET_H
+    AxisType, 1
+    CreateSymbols, true
+    Enc:EncType, 1
+    Id, 7
+    OtherSettings:AllowMotionCmdToSlave, true
+
+
+
+Axis 8: DET_V
+^^^^^^^^^^^^^
+
+.. csv-table::
+    :header: Setting, Value
+    :align: center
+
+    Axis ID, 8
+    Name, DET_V
+    AxisType, 1
+    CreateSymbols, true
+    Enc:EncType, 1
+    Id, 8
+    OtherSettings:AllowMotionCmdToSlave, true
+
+
