@@ -1,5 +1,5 @@
-<?xml version="1.0"?>
-<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.4">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4022.30">
 	<DataTypes>
 		<DataType>
 			<Name GUID="{18071995-0000-0000-0000-002000000002}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..1] OF BIT</Name>
@@ -20,7 +20,7 @@
 			</ArrayInfo>
 		</DataType>
 		<DataType>
-			<Name GUID="{18071995-0000-0000-0000-002000000003}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..2] OF BIT</Name>
+			<Name GUID="{18071995-0000-0000-0000-002000000003}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..2] OF BIT</Name>
 			<BitSize>3</BitSize>
 			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
 			<ArrayInfo>
@@ -47,7 +47,7 @@
 			</ArrayInfo>
 		</DataType>
 		<DataType>
-			<Name GUID="{18071995-0000-0000-0000-002000000005}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..4] OF BIT</Name>
+			<Name GUID="{18071995-0000-0000-0000-002000000005}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..4] OF BIT</Name>
 			<BitSize>5</BitSize>
 			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
 			<ArrayInfo>
@@ -100,7 +100,7 @@
 			<Project File="lcls_plc_roving_spectrometer.xti"/>
 		</Plc>
 		<Io>
-			<Device Id="1" DevType="111" DevFlags="#x0003" AmsPort="28673" AmsNetId="172.21.88.78.2.1" RemoteName="Device 1 (EtherCAT)">
+			<Device DevType="111" DevFlags="#x0003" AmsPort="28673" AmsNetId="172.21.88.78.2.1" RemoteName="Device 1 (EtherCAT)" Id="1">
 				<Name>Device 1 (EtherCAT)</Name>
 				<AddressInfo>
 					<Ccat>
@@ -133,11 +133,11 @@
 				<Image Id="4" AddrType="10" ImageType="3">
 					<Name>Image-2</Name>
 				</Image>
-				<Box Id="1" BoxType="9099">
+				<Box BoxType="9099" Id="1">
 					<Name>Term 1 (EK1200)</Name>
 					<ImageId>1000</ImageId>
 					<EtherCAT PdiType="#x0100" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04b02c52" RevisionNo="#x00001388" InfoDataState="false" PortPhys="49" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1200-5000 EtherCAT Power supply (2A E-Bus)" Desc="EK1200" PortABoxInfo="#x00ffffff"/>
-					<Box Id="2" BoxType="9099" BoxFlags="#x00000020">
+					<Box BoxType="9099" BoxFlags="#x00000020" Id="2">
 						<Name>EL7041_ROV_ALL_H</Name>
 						<ImageId>1001</ImageId>
 						<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="39" FoeType="1" VendorId="#x00000002" ProductCode="#x1b813052" RevisionNo="#x00190000" InfoDataAddr="true" InfoDataSoeDS401="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL7041 1Ch. Stepper motor output stage (50V, 5A)" Desc="EL7041" PortABoxInfo="#x01000001">
@@ -564,7 +564,7 @@
 							<CoeProfile ProfileNo="46142345" DisplayName="Positioning interfa"/>
 						</EtherCAT>
 					</Box>
-					<Box Id="3" BoxType="9099">
+					<Box BoxType="9099" Id="3">
 						<Name>E2 (EL1088)</Name>
 						<ImageId>7</ImageId>
 						<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04403052" RevisionNo="#x00120000" RepeatSupport="true" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL1088 8Ch. Dig. Input 24V, 3ms, negative" Desc="EL1088" PortABoxInfo="#x01000002">
@@ -612,7 +612,7 @@
 							</Pdo>
 						</EtherCAT>
 					</Box>
-					<Box Id="4" BoxType="9099" BoxFlags="#x00000020">
+					<Box BoxType="9099" BoxFlags="#x00000020" Id="4">
 						<Name>EL7041_ROV_ALL_V</Name>
 						<ImageId>1001</ImageId>
 						<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="39" FoeType="1" VendorId="#x00000002" ProductCode="#x1b813052" RevisionNo="#x00190000" InfoDataAddr="true" InfoDataSoeDS401="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL7041 1Ch. Stepper motor output stage (50V, 5A)" Desc="EL7041" PortABoxInfo="#x01000003">
@@ -1039,7 +1039,7 @@
 							<CoeProfile ProfileNo="46142345" DisplayName="Positioning interfa"/>
 						</EtherCAT>
 					</Box>
-					<Box Id="5" BoxType="9099" BoxFlags="#x00000020">
+					<Box BoxType="9099" BoxFlags="#x00000020" Id="5">
 						<Name>EL7041_ROV_XTAL_TH</Name>
 						<ImageId>1001</ImageId>
 						<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="39" FoeType="1" VendorId="#x00000002" ProductCode="#x1b813052" RevisionNo="#x00190000" InfoDataAddr="true" InfoDataSoeDS401="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL7041 1Ch. Stepper motor output stage (50V, 5A)" Desc="EL7041" PortABoxInfo="#x01000004">
@@ -1466,7 +1466,7 @@
 							<CoeProfile ProfileNo="46142345" DisplayName="Positioning interfa"/>
 						</EtherCAT>
 					</Box>
-					<Box Id="6" BoxType="9099">
+					<Box BoxType="9099" Id="6">
 						<Name>E5 (EL1088)</Name>
 						<ImageId>7</ImageId>
 						<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04403052" RevisionNo="#x00120000" RepeatSupport="true" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL1088 8Ch. Dig. Input 24V, 3ms, negative" Desc="EL1088" PortABoxInfo="#x01000005">
@@ -1514,7 +1514,7 @@
 							</Pdo>
 						</EtherCAT>
 					</Box>
-					<Box Id="7" BoxType="9099" BoxFlags="#x00000020">
+					<Box BoxType="9099" BoxFlags="#x00000020" Id="7">
 						<Name>EL7041_ROV_XTAL_TTH</Name>
 						<ImageId>1001</ImageId>
 						<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="39" FoeType="1" VendorId="#x00000002" ProductCode="#x1b813052" RevisionNo="#x00190000" InfoDataAddr="true" InfoDataSoeDS401="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL7041 1Ch. Stepper motor output stage (50V, 5A)" Desc="EL7041" PortABoxInfo="#x01000006">
@@ -1941,7 +1941,7 @@
 							<CoeProfile ProfileNo="46142345" DisplayName="Positioning interfa"/>
 						</EtherCAT>
 					</Box>
-					<Box Id="8" BoxType="9099" BoxFlags="#x00000020">
+					<Box BoxType="9099" BoxFlags="#x00000020" Id="8">
 						<Name>EL7041_ROV_XTAL_H</Name>
 						<ImageId>1001</ImageId>
 						<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="39" FoeType="1" VendorId="#x00000002" ProductCode="#x1b813052" RevisionNo="#x00190000" InfoDataAddr="true" InfoDataSoeDS401="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL7041 1Ch. Stepper motor output stage (50V, 5A)" Desc="EL7041" PortABoxInfo="#x01000007">
@@ -2368,7 +2368,7 @@
 							<CoeProfile ProfileNo="46142345" DisplayName="Positioning interfa"/>
 						</EtherCAT>
 					</Box>
-					<Box Id="9" BoxType="9099">
+					<Box BoxType="9099" Id="9">
 						<Name>E8 (EL1088)</Name>
 						<ImageId>7</ImageId>
 						<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04403052" RevisionNo="#x00120000" RepeatSupport="true" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL1088 8Ch. Dig. Input 24V, 3ms, negative" Desc="EL1088" PortABoxInfo="#x01000008">
@@ -2416,7 +2416,7 @@
 							</Pdo>
 						</EtherCAT>
 					</Box>
-					<Box Id="10" BoxType="9099" BoxFlags="#x00000020">
+					<Box BoxType="9099" BoxFlags="#x00000020" Id="10">
 						<Name>EL7041_ROV_XTAL_V</Name>
 						<ImageId>1001</ImageId>
 						<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="39" FoeType="1" VendorId="#x00000002" ProductCode="#x1b813052" RevisionNo="#x00190000" InfoDataAddr="true" InfoDataSoeDS401="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL7041 1Ch. Stepper motor output stage (50V, 5A)" Desc="EL7041" PortABoxInfo="#x01000009">
@@ -2843,7 +2843,7 @@
 							<CoeProfile ProfileNo="46142345" DisplayName="Positioning interfa"/>
 						</EtherCAT>
 					</Box>
-					<Box Id="11" BoxType="9099" BoxFlags="#x00000020">
+					<Box BoxType="9099" BoxFlags="#x00000020" Id="11">
 						<Name>EL7041_ROV_DET_H</Name>
 						<ImageId>1001</ImageId>
 						<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="39" FoeType="1" VendorId="#x00000002" ProductCode="#x1b813052" RevisionNo="#x00190000" InfoDataAddr="true" InfoDataSoeDS401="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL7041 1Ch. Stepper motor output stage (50V, 5A)" Desc="EL7041" PortABoxInfo="#x0100000a">
@@ -3270,7 +3270,7 @@
 							<CoeProfile ProfileNo="46142345" DisplayName="Positioning interfa"/>
 						</EtherCAT>
 					</Box>
-					<Box Id="12" BoxType="9099">
+					<Box BoxType="9099" Id="12">
 						<Name>E11  (EL1088)</Name>
 						<ImageId>7</ImageId>
 						<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04403052" RevisionNo="#x00120000" RepeatSupport="true" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL1088 8Ch. Dig. Input 24V, 3ms, negative" Desc="EL1088" PortABoxInfo="#x0100000b">
@@ -3318,7 +3318,7 @@
 							</Pdo>
 						</EtherCAT>
 					</Box>
-					<Box Id="13" BoxType="9099" BoxFlags="#x00000020">
+					<Box BoxType="9099" BoxFlags="#x00000020" Id="13">
 						<Name>EL7041_ROV_DET_V</Name>
 						<ImageId>1001</ImageId>
 						<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="39" FoeType="1" VendorId="#x00000002" ProductCode="#x1b813052" RevisionNo="#x00190000" InfoDataAddr="true" InfoDataSoeDS401="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL7041 1Ch. Stepper motor output stage (50V, 5A)" Desc="EL7041" PortABoxInfo="#x0100000c">
@@ -3745,7 +3745,7 @@
 							<CoeProfile ProfileNo="46142345" DisplayName="Positioning interfa"/>
 						</EtherCAT>
 					</Box>
-					<Box Id="14" BoxType="9099" BoxFlags="#x00000020">
+					<Box BoxType="9099" BoxFlags="#x00000020" Id="14">
 						<Name>E13 (EL6070)</Name>
 						<ImageId>1002</ImageId>
 						<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="35" FoeType="1" VendorId="#x00000002" ProductCode="#x17b63052" RevisionNo="#x00120000" InfoDataAddr="true" RepeatSupport="true" TimeoutMailbox2="3000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL6070 1Ch. Licensing-Terminal" Desc="EL6070" PortABoxInfo="#x0100000d">
@@ -3755,7 +3755,7 @@
 							<CoeProfile ProfileNo="43914121" DisplayName="Licensing"/>
 						</EtherCAT>
 					</Box>
-					<Box Id="15" BoxType="9099">
+					<Box BoxType="9099" Id="15">
 						<Name>Term 15 (EL9011)</Name>
 						<ImageId>1003</ImageId>
 						<EtherCAT CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x23333050" InfoDataState="false" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL9011 End Terminal" Desc="EL9011" PortABoxInfo="#x0100000e"/>
@@ -3766,8 +3766,8 @@
 		</Io>
 	</Project>
 	<Mappings>
-		<MappingInfo Identifier="{00000000-2001-0850-0020-500841000403}" Id="#x02030030"/>
-		<MappingInfo Identifier="{00000000-0020-0304-1000-040320000403}" Id="#x02030020"/>
 		<MappingInfo Identifier="{05000010-2001-0850-1000-040300205008}" Id="#x02030010" Watchdog="14000000040000000400000004000000"/>
+		<MappingInfo Identifier="{00000000-0020-0304-1000-040320000403}" Id="#x02030020"/>
+		<MappingInfo Identifier="{00000000-2001-0850-0020-500841000403}" Id="#x02030030"/>
 	</Mappings>
 </TcSmProject>

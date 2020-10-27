@@ -1300,11 +1300,11 @@ External Setpoint Generation:
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^E5 (EL1088)">
 				<Link VarA="PlcTask Inputs^Main.M3.bHome" VarB="Channel 5^Input" Size="1"/>
-				<Link VarA="PlcTask Inputs^Main.M3.bLimitBackwardEnable" VarB="Channel 3^Input" Size="1"/>
-				<Link VarA="PlcTask Inputs^Main.M3.bLimitForwardEnable" VarB="Channel 1^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^Main.M3.bLimitBackwardEnable" VarB="Channel 3^Input" AutoLink="true" Size="1"/>
+				<Link VarA="PlcTask Inputs^Main.M3.bLimitForwardEnable" VarB="Channel 1^Input" AutoLink="true" Size="1"/>
 				<Link VarA="PlcTask Inputs^Main.M4.bHome" VarB="Channel 6^Input" Size="1"/>
-				<Link VarA="PlcTask Inputs^Main.M4.bLimitBackwardEnable" VarB="Channel 4^Input" Size="1"/>
-				<Link VarA="PlcTask Inputs^Main.M4.bLimitForwardEnable" VarB="Channel 2^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^Main.M4.bLimitBackwardEnable" VarB="Channel 4^Input" AutoLink="true" Size="1"/>
+				<Link VarA="PlcTask Inputs^Main.M4.bLimitForwardEnable" VarB="Channel 2^Input" AutoLink="true" Size="1"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^E8 (EL1088)">
 				<Link VarA="PlcTask Inputs^Main.M5.bHome" VarB="Channel 5^Input" Size="1"/>
