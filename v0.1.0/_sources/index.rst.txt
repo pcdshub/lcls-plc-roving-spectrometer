@@ -1,0 +1,29 @@
+lcls-plc-roving-spectrometer
+----------------------------
+
+.. toctree::
+    :maxdepth: 2
+    :caption: lcls-plc-roving-spectrometer
+
+    lcls-plc-roving-spectrometer_pragmas
+    lcls-plc-roving-spectrometer_nc
+    lcls-plc-roving-spectrometer_boxes
+    lcls-plc-roving-spectrometer_links
+
+
+.. toctree::
+    :maxdepth: 2
+    :caption: lcls_plc_roving_spectrometer
+
+    lcls-plc-roving-spectrometer_lcls_plc_roving_spectrometer_summary
+    lcls-plc-roving-spectrometer_lcls_plc_roving_spectrometer_epics
+    lcls-plc-roving-spectrometer_lcls_plc_roving_spectrometer_source
+
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
