@@ -3,9 +3,9 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>NC Settings &mdash; pcdshub/lcls-plc-roving-spectrometer  documentation</title>
   
@@ -16,7 +16,10 @@
 
   
   
+
   
+  
+
   
 
   
@@ -29,7 +32,6 @@
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
         <script src="_static/doctr-versions-menu.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
@@ -52,7 +54,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home" alt="Documentation Home"> pcdshub/lcls-plc-roving-spectrometer
+            <a href="index.html" class="icon icon-home"> pcdshub/lcls-plc-roving-spectrometer
           
 
           
@@ -151,6 +153,8 @@
 
 
 
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
 
   <ul class="wy-breadcrumbs">
@@ -162,7 +166,7 @@
     
       <li class="wy-breadcrumbs-aside">
         
-            
+          
             <a href="_sources/lcls-plc-roving-spectrometer_nc.rst.txt" rel="nofollow"> View page source</a>
           
         
@@ -241,13 +245,46 @@
 <td><p>true</p></td>
 </tr>
 <tr class="row-even"><td><p>Enc:EncType</p></td>
-<td><p>1</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-odd"><td><p>Enc:Inc:RefSoftSyncMask</p></td>
+<td><p>#x0000ffff</p></td>
+</tr>
+<tr class="row-even"><td><p>Enc:Inverse</p></td>
+<td><p>true</p></td>
+</tr>
+<tr class="row-odd"><td><p>Enc:MaxCount</p></td>
+<td><p>#x0000ffff</p></td>
+</tr>
+<tr class="row-even"><td><p>Enc:ScaleFactorNumerator</p></td>
+<td><p>3.90625e-05</p></td>
 </tr>
 <tr class="row-odd"><td><p>Id</p></td>
 <td><p>1</p></td>
 </tr>
 <tr class="row-even"><td><p>OtherSettings:AllowMotionCmdToSlave</p></td>
 <td><p>true</p></td>
+</tr>
+<tr class="row-odd"><td><p>OtherSettings:PulseDistanceNeg</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-even"><td><p>OtherSettings:PulseDistancePos</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-odd"><td><p>Velo:FastManual</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-even"><td><p>Velo:Maximum</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-odd"><td><p>Velo:RefSearch</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-even"><td><p>Velo:RefSync</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-odd"><td><p>Velo:SlowManual</p></td>
+<td><p>1</p></td>
 </tr>
 </tbody>
 </table>
@@ -277,14 +314,62 @@
 <tr class="row-odd"><td><p>CreateSymbols</p></td>
 <td><p>true</p></td>
 </tr>
-<tr class="row-even"><td><p>Enc:EncType</p></td>
-<td><p>1</p></td>
+<tr class="row-even"><td><p>Dynamic:Acceleration</p></td>
+<td><p>375</p></td>
 </tr>
-<tr class="row-odd"><td><p>Id</p></td>
+<tr class="row-odd"><td><p>Dynamic:AccelerationMaximum</p></td>
+<td><p>3750</p></td>
+</tr>
+<tr class="row-even"><td><p>Dynamic:Deceleration</p></td>
+<td><p>375</p></td>
+</tr>
+<tr class="row-odd"><td><p>Dynamic:DecelerationMaximum</p></td>
+<td><p>3750</p></td>
+</tr>
+<tr class="row-even"><td><p>Dynamic:Jerk</p></td>
+<td><p>560</p></td>
+</tr>
+<tr class="row-odd"><td><p>Enc:EncType</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-even"><td><p>Enc:Inc:RefSoftSyncMask</p></td>
+<td><p>#x0000ffff</p></td>
+</tr>
+<tr class="row-odd"><td><p>Enc:Inverse</p></td>
+<td><p>true</p></td>
+</tr>
+<tr class="row-even"><td><p>Enc:MaxCount</p></td>
+<td><p>#x0000ffff</p></td>
+</tr>
+<tr class="row-odd"><td><p>Enc:ScaleFactorNumerator</p></td>
+<td><p>1.953125e-05</p></td>
+</tr>
+<tr class="row-even"><td><p>Id</p></td>
 <td><p>2</p></td>
 </tr>
-<tr class="row-even"><td><p>OtherSettings:AllowMotionCmdToSlave</p></td>
+<tr class="row-odd"><td><p>OtherSettings:AllowMotionCmdToSlave</p></td>
 <td><p>true</p></td>
+</tr>
+<tr class="row-even"><td><p>OtherSettings:PulseDistanceNeg</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>OtherSettings:PulseDistancePos</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>Velo:FastManual</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-odd"><td><p>Velo:Maximum</p></td>
+<td><p>2.5</p></td>
+</tr>
+<tr class="row-even"><td><p>Velo:RefSearch</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Velo:RefSync</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>Velo:SlowManual</p></td>
+<td><p>1</p></td>
 </tr>
 </tbody>
 </table>
@@ -314,14 +399,65 @@
 <tr class="row-odd"><td><p>CreateSymbols</p></td>
 <td><p>true</p></td>
 </tr>
-<tr class="row-even"><td><p>Enc:EncType</p></td>
-<td><p>1</p></td>
+<tr class="row-even"><td><p>Dynamic:Acceleration</p></td>
+<td><p>7.5</p></td>
 </tr>
-<tr class="row-odd"><td><p>Id</p></td>
+<tr class="row-odd"><td><p>Dynamic:AccelerationMaximum</p></td>
+<td><p>75</p></td>
+</tr>
+<tr class="row-even"><td><p>Dynamic:Deceleration</p></td>
+<td><p>7.5</p></td>
+</tr>
+<tr class="row-odd"><td><p>Dynamic:DecelerationMaximum</p></td>
+<td><p>75</p></td>
+</tr>
+<tr class="row-even"><td><p>Dynamic:Jerk</p></td>
+<td><p>11.25</p></td>
+</tr>
+<tr class="row-odd"><td><p>Enc:EncType</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-even"><td><p>Enc:Inc:RefSoftSyncMask</p></td>
+<td><p>#x0000ffff</p></td>
+</tr>
+<tr class="row-odd"><td><p>Enc:MaxCount</p></td>
+<td><p>#x0000ffff</p></td>
+</tr>
+<tr class="row-even"><td><p>Enc:ScaleFactorNumerator</p></td>
+<td><p>7.8125e-06</p></td>
+</tr>
+<tr class="row-odd"><td><p>General:UnitName</p></td>
+<td><p>Degree</p></td>
+</tr>
+<tr class="row-even"><td><p>Id</p></td>
 <td><p>3</p></td>
 </tr>
-<tr class="row-even"><td><p>OtherSettings:AllowMotionCmdToSlave</p></td>
+<tr class="row-odd"><td><p>OtherSettings:AllowMotionCmdToSlave</p></td>
 <td><p>true</p></td>
+</tr>
+<tr class="row-even"><td><p>OtherSettings:PulseDistanceNeg</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>OtherSettings:PulseDistancePos</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>Velo:Fast</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Velo:FastManual</p></td>
+<td><p>0.6</p></td>
+</tr>
+<tr class="row-even"><td><p>Velo:Maximum</p></td>
+<td><p>0.65</p></td>
+</tr>
+<tr class="row-odd"><td><p>Velo:RefSearch</p></td>
+<td><p>0.6</p></td>
+</tr>
+<tr class="row-even"><td><p>Velo:RefSync</p></td>
+<td><p>0.6</p></td>
+</tr>
+<tr class="row-odd"><td><p>Velo:SlowManual</p></td>
+<td><p>0.4</p></td>
 </tr>
 </tbody>
 </table>
@@ -351,14 +487,56 @@
 <tr class="row-odd"><td><p>CreateSymbols</p></td>
 <td><p>true</p></td>
 </tr>
-<tr class="row-even"><td><p>Enc:EncType</p></td>
-<td><p>1</p></td>
+<tr class="row-even"><td><p>Dynamic:Acceleration</p></td>
+<td><p>7.5</p></td>
 </tr>
-<tr class="row-odd"><td><p>Id</p></td>
+<tr class="row-odd"><td><p>Dynamic:AccelerationMaximum</p></td>
+<td><p>75</p></td>
+</tr>
+<tr class="row-even"><td><p>Dynamic:Deceleration</p></td>
+<td><p>7.5</p></td>
+</tr>
+<tr class="row-odd"><td><p>Dynamic:DecelerationMaximum</p></td>
+<td><p>75</p></td>
+</tr>
+<tr class="row-even"><td><p>Dynamic:Jerk</p></td>
+<td><p>10</p></td>
+</tr>
+<tr class="row-odd"><td><p>Enc:EncType</p></td>
 <td><p>4</p></td>
 </tr>
-<tr class="row-even"><td><p>OtherSettings:AllowMotionCmdToSlave</p></td>
+<tr class="row-even"><td><p>Enc:Inc:RefSoftSyncMask</p></td>
+<td><p>#x0000ffff</p></td>
+</tr>
+<tr class="row-odd"><td><p>Enc:MaxCount</p></td>
+<td><p>#x0000ffff</p></td>
+</tr>
+<tr class="row-even"><td><p>Enc:ScaleFactorNumerator</p></td>
+<td><p>1.5625e-05</p></td>
+</tr>
+<tr class="row-odd"><td><p>General:UnitName</p></td>
+<td><p>Degree</p></td>
+</tr>
+<tr class="row-even"><td><p>Id</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-odd"><td><p>OtherSettings:AllowMotionCmdToSlave</p></td>
 <td><p>true</p></td>
+</tr>
+<tr class="row-even"><td><p>Velo:FastManual</p></td>
+<td><p>1.5</p></td>
+</tr>
+<tr class="row-odd"><td><p>Velo:Maximum</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p>Velo:RefSearch</p></td>
+<td><p>0.5</p></td>
+</tr>
+<tr class="row-odd"><td><p>Velo:RefSync</p></td>
+<td><p>0.5</p></td>
+</tr>
+<tr class="row-even"><td><p>Velo:SlowManual</p></td>
+<td><p>1</p></td>
 </tr>
 </tbody>
 </table>
@@ -388,14 +566,65 @@
 <tr class="row-odd"><td><p>CreateSymbols</p></td>
 <td><p>true</p></td>
 </tr>
-<tr class="row-even"><td><p>Enc:EncType</p></td>
-<td><p>1</p></td>
+<tr class="row-even"><td><p>Dynamic:Acceleration</p></td>
+<td><p>75</p></td>
+</tr>
+<tr class="row-odd"><td><p>Dynamic:AccelerationMaximum</p></td>
+<td><p>7500</p></td>
+</tr>
+<tr class="row-even"><td><p>Dynamic:Deceleration</p></td>
+<td><p>75</p></td>
+</tr>
+<tr class="row-odd"><td><p>Dynamic:DecelerationMaximum</p></td>
+<td><p>7500</p></td>
+</tr>
+<tr class="row-even"><td><p>Dynamic:Jerk</p></td>
+<td><p>1125</p></td>
+</tr>
+<tr class="row-odd"><td><p>Enc:EncType</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-even"><td><p>Enc:Inc:RefSoftSyncMask</p></td>
+<td><p>#x0000ffff</p></td>
+</tr>
+<tr class="row-odd"><td><p>Enc:Inverse</p></td>
+<td><p>true</p></td>
+</tr>
+<tr class="row-even"><td><p>Enc:MaxCount</p></td>
+<td><p>#x0000ffff</p></td>
+</tr>
+<tr class="row-odd"><td><p>Enc:ScaleFactorNumerator</p></td>
+<td><p>4.40625e-05</p></td>
+</tr>
+<tr class="row-even"><td><p>General:UnitName</p></td>
+<td><p>Degree</p></td>
 </tr>
 <tr class="row-odd"><td><p>Id</p></td>
 <td><p>5</p></td>
 </tr>
 <tr class="row-even"><td><p>OtherSettings:AllowMotionCmdToSlave</p></td>
 <td><p>true</p></td>
+</tr>
+<tr class="row-odd"><td><p>OtherSettings:PulseDistanceNeg</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>OtherSettings:PulseDistancePos</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Velo:FastManual</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-even"><td><p>Velo:Maximum</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-odd"><td><p>Velo:RefSearch</p></td>
+<td><p>0.5</p></td>
+</tr>
+<tr class="row-even"><td><p>Velo:RefSync</p></td>
+<td><p>0.5</p></td>
+</tr>
+<tr class="row-odd"><td><p>Velo:SlowManual</p></td>
+<td><p>1.5</p></td>
 </tr>
 </tbody>
 </table>
@@ -426,13 +655,40 @@
 <td><p>true</p></td>
 </tr>
 <tr class="row-even"><td><p>Enc:EncType</p></td>
-<td><p>1</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-odd"><td><p>Enc:Inc:RefSoftSyncMask</p></td>
+<td><p>#x0000ffff</p></td>
+</tr>
+<tr class="row-even"><td><p>Enc:Inverse</p></td>
+<td><p>true</p></td>
+</tr>
+<tr class="row-odd"><td><p>Enc:MaxCount</p></td>
+<td><p>#x0000ffff</p></td>
+</tr>
+<tr class="row-even"><td><p>Enc:ScaleFactorNumerator</p></td>
+<td><p>7.8125e-05</p></td>
 </tr>
 <tr class="row-odd"><td><p>Id</p></td>
 <td><p>6</p></td>
 </tr>
 <tr class="row-even"><td><p>OtherSettings:AllowMotionCmdToSlave</p></td>
 <td><p>true</p></td>
+</tr>
+<tr class="row-odd"><td><p>Velo:FastManual</p></td>
+<td><p>6</p></td>
+</tr>
+<tr class="row-even"><td><p>Velo:Maximum</p></td>
+<td><p>10</p></td>
+</tr>
+<tr class="row-odd"><td><p>Velo:RefSearch</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>Velo:RefSync</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Velo:SlowManual</p></td>
+<td><p>3</p></td>
 </tr>
 </tbody>
 </table>
@@ -463,13 +719,46 @@
 <td><p>true</p></td>
 </tr>
 <tr class="row-even"><td><p>Enc:EncType</p></td>
-<td><p>1</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-odd"><td><p>Enc:Inc:RefSoftSyncMask</p></td>
+<td><p>#x0000ffff</p></td>
+</tr>
+<tr class="row-even"><td><p>Enc:Inverse</p></td>
+<td><p>true</p></td>
+</tr>
+<tr class="row-odd"><td><p>Enc:MaxCount</p></td>
+<td><p>#x0000ffff</p></td>
+</tr>
+<tr class="row-even"><td><p>Enc:ScaleFactorNumerator</p></td>
+<td><p>7.8125e-05</p></td>
 </tr>
 <tr class="row-odd"><td><p>Id</p></td>
 <td><p>7</p></td>
 </tr>
 <tr class="row-even"><td><p>OtherSettings:AllowMotionCmdToSlave</p></td>
 <td><p>true</p></td>
+</tr>
+<tr class="row-odd"><td><p>OtherSettings:PulseDistanceNeg</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>OtherSettings:PulseDistancePos</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Velo:FastManual</p></td>
+<td><p>6</p></td>
+</tr>
+<tr class="row-even"><td><p>Velo:Maximum</p></td>
+<td><p>10</p></td>
+</tr>
+<tr class="row-odd"><td><p>Velo:RefSearch</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>Velo:RefSync</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Velo:SlowManual</p></td>
+<td><p>3</p></td>
 </tr>
 </tbody>
 </table>
@@ -500,13 +789,40 @@
 <td><p>true</p></td>
 </tr>
 <tr class="row-even"><td><p>Enc:EncType</p></td>
-<td><p>1</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-odd"><td><p>Enc:Inc:RefSoftSyncMask</p></td>
+<td><p>#x0000ffff</p></td>
+</tr>
+<tr class="row-even"><td><p>Enc:Inverse</p></td>
+<td><p>true</p></td>
+</tr>
+<tr class="row-odd"><td><p>Enc:MaxCount</p></td>
+<td><p>#x0000ffff</p></td>
+</tr>
+<tr class="row-even"><td><p>Enc:ScaleFactorNumerator</p></td>
+<td><p>7.8125e-05</p></td>
 </tr>
 <tr class="row-odd"><td><p>Id</p></td>
 <td><p>8</p></td>
 </tr>
 <tr class="row-even"><td><p>OtherSettings:AllowMotionCmdToSlave</p></td>
 <td><p>true</p></td>
+</tr>
+<tr class="row-odd"><td><p>Velo:FastManual</p></td>
+<td><p>6</p></td>
+</tr>
+<tr class="row-even"><td><p>Velo:Maximum</p></td>
+<td><p>10</p></td>
+</tr>
+<tr class="row-odd"><td><p>Velo:RefSearch</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>Velo:RefSync</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Velo:SlowManual</p></td>
+<td><p>3</p></td>
 </tr>
 </tbody>
 </table>
@@ -518,37 +834,29 @@
            
           </div>
           <footer>
-  
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="lcls-plc-roving-spectrometer_boxes.html" class="btn btn-neutral float-right" title="Boxes" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="lcls-plc-roving-spectrometer_pragmas.html" class="btn btn-neutral float-left" title="Pragmas" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+        <a href="lcls-plc-roving-spectrometer_boxes.html" class="btn btn-neutral float-right" title="Boxes" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="lcls-plc-roving-spectrometer_pragmas.html" class="btn btn-neutral float-left" title="Pragmas" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        
-        &copy; Copyright 2020, SLAC National Accelerator Laboratory
+        &#169; Copyright 2021, SLAC National Accelerator Laboratory.
 
     </p>
   </div>
     
     
     
-    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     
-    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     
     provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
-
         </div>
       </div>
 

@@ -28,9 +28,20 @@ Axis 1: ALL_H
     Name, ALL_H
     AxisType, 1
     CreateSymbols, true
-    Enc:EncType, 1
+    Enc:EncType, 4
+    Enc:Inc:RefSoftSyncMask, #x0000ffff
+    Enc:Inverse, true
+    Enc:MaxCount, #x0000ffff
+    Enc:ScaleFactorNumerator, 3.90625e-05
     Id, 1
     OtherSettings:AllowMotionCmdToSlave, true
+    OtherSettings:PulseDistanceNeg, 3
+    OtherSettings:PulseDistancePos, 3
+    Velo:FastManual, 3
+    Velo:Maximum, 5
+    Velo:RefSearch, 3
+    Velo:RefSync, 3
+    Velo:SlowManual, 1
 
 
 
@@ -45,9 +56,25 @@ Axis 2: ALL_V
     Name, ALL_V
     AxisType, 1
     CreateSymbols, true
-    Enc:EncType, 1
+    Dynamic:Acceleration, 375
+    Dynamic:AccelerationMaximum, 3750
+    Dynamic:Deceleration, 375
+    Dynamic:DecelerationMaximum, 3750
+    Dynamic:Jerk, 560
+    Enc:EncType, 4
+    Enc:Inc:RefSoftSyncMask, #x0000ffff
+    Enc:Inverse, true
+    Enc:MaxCount, #x0000ffff
+    Enc:ScaleFactorNumerator, 1.953125e-05
     Id, 2
     OtherSettings:AllowMotionCmdToSlave, true
+    OtherSettings:PulseDistanceNeg, 1
+    OtherSettings:PulseDistancePos, 1
+    Velo:FastManual, 2
+    Velo:Maximum, 2.5
+    Velo:RefSearch, 1
+    Velo:RefSync, 1
+    Velo:SlowManual, 1
 
 
 
@@ -62,9 +89,26 @@ Axis 3: XTAL_TH
     Name, XTAL_TH
     AxisType, 1
     CreateSymbols, true
-    Enc:EncType, 1
+    Dynamic:Acceleration, 7.5
+    Dynamic:AccelerationMaximum, 75
+    Dynamic:Deceleration, 7.5
+    Dynamic:DecelerationMaximum, 75
+    Dynamic:Jerk, 11.25
+    Enc:EncType, 4
+    Enc:Inc:RefSoftSyncMask, #x0000ffff
+    Enc:MaxCount, #x0000ffff
+    Enc:ScaleFactorNumerator, 7.8125e-06
+    General:UnitName, Degree
     Id, 3
     OtherSettings:AllowMotionCmdToSlave, true
+    OtherSettings:PulseDistanceNeg, 1
+    OtherSettings:PulseDistancePos, 1
+    Velo:Fast, 1
+    Velo:FastManual, 0.6
+    Velo:Maximum, 0.65
+    Velo:RefSearch, 0.6
+    Velo:RefSync, 0.6
+    Velo:SlowManual, 0.4
 
 
 
@@ -79,9 +123,23 @@ Axis 4: XTAL_TTH
     Name, XTAL_TTH
     AxisType, 1
     CreateSymbols, true
-    Enc:EncType, 1
+    Dynamic:Acceleration, 7.5
+    Dynamic:AccelerationMaximum, 75
+    Dynamic:Deceleration, 7.5
+    Dynamic:DecelerationMaximum, 75
+    Dynamic:Jerk, 10
+    Enc:EncType, 4
+    Enc:Inc:RefSoftSyncMask, #x0000ffff
+    Enc:MaxCount, #x0000ffff
+    Enc:ScaleFactorNumerator, 1.5625e-05
+    General:UnitName, Degree
     Id, 4
     OtherSettings:AllowMotionCmdToSlave, true
+    Velo:FastManual, 1.5
+    Velo:Maximum, 2
+    Velo:RefSearch, 0.5
+    Velo:RefSync, 0.5
+    Velo:SlowManual, 1
 
 
 
@@ -96,9 +154,26 @@ Axis 5: XTAL_H
     Name, XTAL_H
     AxisType, 1
     CreateSymbols, true
-    Enc:EncType, 1
+    Dynamic:Acceleration, 75
+    Dynamic:AccelerationMaximum, 7500
+    Dynamic:Deceleration, 75
+    Dynamic:DecelerationMaximum, 7500
+    Dynamic:Jerk, 1125
+    Enc:EncType, 4
+    Enc:Inc:RefSoftSyncMask, #x0000ffff
+    Enc:Inverse, true
+    Enc:MaxCount, #x0000ffff
+    Enc:ScaleFactorNumerator, 4.40625e-05
+    General:UnitName, Degree
     Id, 5
     OtherSettings:AllowMotionCmdToSlave, true
+    OtherSettings:PulseDistanceNeg, 1
+    OtherSettings:PulseDistancePos, 1
+    Velo:FastManual, 3
+    Velo:Maximum, 5
+    Velo:RefSearch, 0.5
+    Velo:RefSync, 0.5
+    Velo:SlowManual, 1.5
 
 
 
@@ -113,9 +188,18 @@ Axis 6: XTAL_V
     Name, XTAL_V
     AxisType, 1
     CreateSymbols, true
-    Enc:EncType, 1
+    Enc:EncType, 4
+    Enc:Inc:RefSoftSyncMask, #x0000ffff
+    Enc:Inverse, true
+    Enc:MaxCount, #x0000ffff
+    Enc:ScaleFactorNumerator, 7.8125e-05
     Id, 6
     OtherSettings:AllowMotionCmdToSlave, true
+    Velo:FastManual, 6
+    Velo:Maximum, 10
+    Velo:RefSearch, 1
+    Velo:RefSync, 1
+    Velo:SlowManual, 3
 
 
 
@@ -130,9 +214,20 @@ Axis 7: DET_H
     Name, DET_H
     AxisType, 1
     CreateSymbols, true
-    Enc:EncType, 1
+    Enc:EncType, 4
+    Enc:Inc:RefSoftSyncMask, #x0000ffff
+    Enc:Inverse, true
+    Enc:MaxCount, #x0000ffff
+    Enc:ScaleFactorNumerator, 7.8125e-05
     Id, 7
     OtherSettings:AllowMotionCmdToSlave, true
+    OtherSettings:PulseDistanceNeg, 1
+    OtherSettings:PulseDistancePos, 1
+    Velo:FastManual, 6
+    Velo:Maximum, 10
+    Velo:RefSearch, 1
+    Velo:RefSync, 1
+    Velo:SlowManual, 3
 
 
 
@@ -147,8 +242,17 @@ Axis 8: DET_V
     Name, DET_V
     AxisType, 1
     CreateSymbols, true
-    Enc:EncType, 1
+    Enc:EncType, 4
+    Enc:Inc:RefSoftSyncMask, #x0000ffff
+    Enc:Inverse, true
+    Enc:MaxCount, #x0000ffff
+    Enc:ScaleFactorNumerator, 7.8125e-05
     Id, 8
     OtherSettings:AllowMotionCmdToSlave, true
+    Velo:FastManual, 6
+    Velo:Maximum, 10
+    Velo:RefSearch, 1
+    Velo:RefSync, 1
+    Velo:SlowManual, 3
 
 
