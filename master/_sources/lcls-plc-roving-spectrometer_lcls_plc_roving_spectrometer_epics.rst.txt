@@ -470,195 +470,10 @@ Database Records
       - Type
       - Description
       - Pragma
-    * - $(PREFIX)0RateBeamCnst:Cohort_RBV
-      - longin
-      - Cohort inc on each arb cycle
-      - | archive: 1s monitor
-        | io: input
-
-
-    * - $(PREFIX)0RateBeamCnst:PhotonEnergyRanges_RBV
-      - longin
-      - 0-rate beam constant
-      - | archive: 1s monitor
-        | field: EGU eV
-        | io: input
-
-
-    * - $(PREFIX)0RateBeamCnst:Rate_RBV
-      - longin
-      - 0-rate beam constant
-      - | archive: 1s monitor
-        | field: EGU Hz
-        | io: input
-
-
-    * - $(PREFIX)0RateBeamCnst:Transmission_RBV
-      - ai
-      - 0-rate beam constant
-      - | archive: 1s monitor
-        | field: HOPR 1
-        | field: LOPR 0
-        | field: PREC 2
-        | io: input
-
-
-    * - $(PREFIX)0RateBeamCnst:Valid_RBV
-      - bi
-      - 0-rate beam constant
-      - | archive: 1s monitor
-        | io: input
-
-
-    * - $(PREFIX)0RateBeamCnst:Veto_RBV
-      - waveform
-      - 0-rate beam constant
-      - | archive: 1s monitor
-        | io: input
-
-
-    * - $(PREFIX)AccumulatedFastFaults_RBV
-      - longin
-      - PMPS_GVL.AccumulatedFF
-      - | io: input
-
-
-    * - $(PREFIX)CurrentBP:Cohort_RBV
-      - longin
-      - Cohort inc on each arb cycle
-      - | archive: 1s monitor
-        | io: input
-
-
-    * - $(PREFIX)CurrentBP:PhotonEnergyRanges_RBV
-      - longin
-      - PMPS_GVL.stCurrentBeamParameters.neVRange
-      - | archive: 1s monitor
-        | field: EGU eV
-        | io: input
-
-
-    * - $(PREFIX)CurrentBP:Rate_RBV
-      - longin
-      - PMPS_GVL.stCurrentBeamParameters.nRate
-      - | archive: 1s monitor
-        | field: EGU Hz
-        | io: input
-
-
-    * - $(PREFIX)CurrentBP:Transmission_RBV
-      - ai
-      - PMPS_GVL.stCurrentBeamParameters.nTran
-      - | archive: 1s monitor
-        | field: HOPR 1
-        | field: LOPR 0
-        | field: PREC 2
-        | io: input
-
-
-    * - $(PREFIX)CurrentBP:Valid_RBV
-      - bi
-      - PMPS_GVL.stCurrentBeamParameters.xValid
-      - | archive: 1s monitor
-        | io: input
-
-
-    * - $(PREFIX)CurrentBP:Veto_RBV
-      - waveform
-      - PMPS_GVL.stCurrentBeamParameters.aVetoDevices
-      - | archive: 1s monitor
-        | io: input
-
-
-    * - $(PREFIX)eVRangeCnst_RBV
-      - waveform
-      - Active eV Range constants
-      - | archive: 1s monitor
-        | field: EGU eV
-        | io: input
-
-
-    * - $(PREFIX)eVRangeHyst_RBV
-      - ai
-      - eV Range hystersis
-      - | archive: 1s monitor
-        | field: EGU eV
-        | io: input
-
-
-    * - $(PREFIX)FullBeamCnst:Cohort_RBV
-      - longin
-      - Cohort inc on each arb cycle
-      - | archive: 1s monitor
-        | io: input
-
-
-    * - $(PREFIX)FullBeamCnst:PhotonEnergyRanges_RBV
-      - longin
-      - Full beam constant
-      - | archive: 1s monitor
-        | field: EGU eV
-        | io: input
-
-
-    * - $(PREFIX)FullBeamCnst:Rate_RBV
-      - longin
-      - Full beam constant
-      - | archive: 1s monitor
-        | field: EGU Hz
-        | io: input
-
-
-    * - $(PREFIX)FullBeamCnst:Transmission_RBV
-      - ai
-      - Full beam constant
-      - | archive: 1s monitor
-        | field: HOPR 1
-        | field: LOPR 0
-        | field: PREC 2
-        | io: input
-
-
-    * - $(PREFIX)FullBeamCnst:Valid_RBV
-      - bi
-      - Full beam constant
-      - | archive: 1s monitor
-        | io: input
-
-
-    * - $(PREFIX)FullBeamCnst:Veto_RBV
-      - waveform
-      - Full beam constant
-      - | archive: 1s monitor
-        | io: input
-
-
-    * - $(PREFIX)K:eVRangeCnst_RBV
-      - waveform
-      - eV Range constants
-      - | archive: 1s monitor
-        | field: EGU eV
-        | io: input
-
-
-    * - $(PREFIX)L:eVRangeCnst_RBV
-      - waveform
-      - eV Range constants
-      - | archive: 1s monitor
-        | field: EGU eV
-        | io: input
-
-
     * - $(PREFIX)LCLSGeneral:GlobalLogTrickleTrip_RBV
       - bi
       - Tripped by overall log count
       - | io: input
-
-
-    * - $(PREFIX)LCLSGeneral:LogHost
-      - waveform
-      - The log host IP address
-      - | io: output
 
 
     * - $(PREFIX)LCLSGeneral:LogHost_RBV
@@ -667,15 +482,9 @@ Database Records
       - | io: output
 
 
-    * - $(PREFIX)LCLSGeneral:LogMessageCount_RBV
-      - longin
-      - Total log messages on the last cycle
-      - | io: input
-
-
-    * - $(PREFIX)LCLSGeneral:LogPort
-      - longout
-      - The log host UDP port
+    * - $(PREFIX)LCLSGeneral:LogHost
+      - waveform
+      - The log host IP address
       - | io: output
 
 
@@ -685,103 +494,15 @@ Database Records
       - | io: output
 
 
-    * - $(PREFIX)RequestedBP:Cohort_RBV
+    * - $(PREFIX)LCLSGeneral:LogPort
+      - longout
+      - The log host UDP port
+      - | io: output
+
+
+    * - $(PREFIX)LCLSGeneral:LogMessageCount_RBV
       - longin
-      - Cohort inc on each arb cycle
-      - | archive: 1s monitor
-        | io: input
-
-
-    * - $(PREFIX)RequestedBP:PhotonEnergyRanges_RBV
-      - longin
-      - PMPS_GVL.stRequestedBeamParameters.neVRange
-      - | archive: 1s monitor
-        | field: EGU eV
-        | io: input
-
-
-    * - $(PREFIX)RequestedBP:Rate_RBV
-      - longin
-      - PMPS_GVL.stRequestedBeamParameters.nRate
-      - | archive: 1s monitor
-        | field: EGU Hz
-        | io: input
-
-
-    * - $(PREFIX)RequestedBP:Transmission_RBV
-      - ai
-      - PMPS_GVL.stRequestedBeamParameters.nTran
-      - | archive: 1s monitor
-        | field: HOPR 1
-        | field: LOPR 0
-        | field: PREC 2
-        | io: input
-
-
-    * - $(PREFIX)RequestedBP:Valid_RBV
-      - bi
-      - PMPS_GVL.stRequestedBeamParameters.xValid
-      - | archive: 1s monitor
-        | io: input
-
-
-    * - $(PREFIX)RequestedBP:Veto_RBV
-      - waveform
-      - PMPS_GVL.stRequestedBeamParameters.aVetoDevices
-      - | archive: 1s monitor
-        | io: input
-
-
-    * - $(PREFIX)SafeBeamCnst:Cohort_RBV
-      - longin
-      - Cohort inc on each arb cycle
-      - | archive: 1s monitor
-        | io: input
-
-
-    * - $(PREFIX)SafeBeamCnst:PhotonEnergyRanges_RBV
-      - longin
-      - Safe beam constant
-      - | archive: 1s monitor
-        | field: EGU eV
-        | io: input
-
-
-    * - $(PREFIX)SafeBeamCnst:Rate_RBV
-      - longin
-      - Safe beam constant
-      - | archive: 1s monitor
-        | field: EGU Hz
-        | io: input
-
-
-    * - $(PREFIX)SafeBeamCnst:Transmission_RBV
-      - ai
-      - Safe beam constant
-      - | archive: 1s monitor
-        | field: HOPR 1
-        | field: LOPR 0
-        | field: PREC 2
-        | io: input
-
-
-    * - $(PREFIX)SafeBeamCnst:Valid_RBV
-      - bi
-      - Safe beam constant
-      - | archive: 1s monitor
-        | io: input
-
-
-    * - $(PREFIX)SafeBeamCnst:Veto_RBV
-      - waveform
-      - Safe beam constant
-      - | archive: 1s monitor
-        | io: input
-
-
-    * - $(PREFIX)SuccessfulPreemptions_RBV
-      - longin
-      - PMPS_GVL.SuccessfulPreemption
+      - Total log messages on the last cycle
       - | io: input
 
 
@@ -833,16 +554,16 @@ Database Records
         | io: input
 
 
-    * - HXX:HXSS:ROV:MMS:ALL_H:PLC:bEnable
-      - bo
+    * - HXX:HXSS:ROV:MMS:ALL_H:PLC:bEnable_RBV
+      - bi
       - Used internally to request enables
       - | field: ONAM TRUE
         | field: ZNAM FALSE
         | io: output
 
 
-    * - HXX:HXSS:ROV:MMS:ALL_H:PLC:bEnable_RBV
-      - bi
+    * - HXX:HXSS:ROV:MMS:ALL_H:PLC:bEnable
+      - bo
       - Used internally to request enables
       - | field: ONAM TRUE
         | field: ZNAM FALSE
@@ -865,16 +586,16 @@ Database Records
         | io: input
 
 
-    * - HXX:HXSS:ROV:MMS:ALL_H:PLC:bExecute
-      - bo
+    * - HXX:HXSS:ROV:MMS:ALL_H:PLC:bExecute_RBV
+      - bi
       - Used internally and by the IOC to start or stop
       - | field: ONAM TRUE
         | field: ZNAM FALSE
         | io: output
 
 
-    * - HXX:HXSS:ROV:MMS:ALL_H:PLC:bExecute_RBV
-      - bi
+    * - HXX:HXSS:ROV:MMS:ALL_H:PLC:bExecute
+      - bo
       - Used internally and by the IOC to start or stop
       - | field: ONAM TRUE
         | field: ZNAM FALSE
@@ -945,14 +666,6 @@ Database Records
         | io: input
 
 
-    * - HXX:HXSS:ROV:MMS:ALL_H:PLC:bReset
-      - bo
-      - Used internally to reset errors
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: output
-
-
     * - HXX:HXSS:ROV:MMS:ALL_H:PLC:bReset_RBV
       - bi
       - Used internally to reset errors
@@ -961,10 +674,12 @@ Database Records
         | io: output
 
 
-    * - HXX:HXSS:ROV:MMS:ALL_H:PLC:fAcceleration
-      - ao
-      - Used internally and by the IOC to set acceleration
-      - | io: output
+    * - HXX:HXSS:ROV:MMS:ALL_H:PLC:bReset
+      - bo
+      - Used internally to reset errors
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
 
 
     * - HXX:HXSS:ROV:MMS:ALL_H:PLC:fAcceleration_RBV
@@ -973,9 +688,9 @@ Database Records
       - | io: output
 
 
-    * - HXX:HXSS:ROV:MMS:ALL_H:PLC:fDeceleration
+    * - HXX:HXSS:ROV:MMS:ALL_H:PLC:fAcceleration
       - ao
-      - Used internally and by the IOC to set deceleration
+      - Used internally and by the IOC to set acceleration
       - | io: output
 
 
@@ -985,9 +700,9 @@ Database Records
       - | io: output
 
 
-    * - HXX:HXSS:ROV:MMS:ALL_H:PLC:fHomePosition
+    * - HXX:HXSS:ROV:MMS:ALL_H:PLC:fDeceleration
       - ao
-      - Used internally and by the IOC to pick home position
+      - Used internally and by the IOC to set deceleration
       - | io: output
 
 
@@ -997,9 +712,9 @@ Database Records
       - | io: output
 
 
-    * - HXX:HXSS:ROV:MMS:ALL_H:PLC:fPosition
+    * - HXX:HXSS:ROV:MMS:ALL_H:PLC:fHomePosition
       - ao
-      - Used internally and by the IOC as the set position
+      - Used internally and by the IOC to pick home position
       - | io: output
 
 
@@ -1009,14 +724,20 @@ Database Records
       - | io: output
 
 
-    * - HXX:HXSS:ROV:MMS:ALL_H:PLC:fVelocity
+    * - HXX:HXSS:ROV:MMS:ALL_H:PLC:fPosition
       - ao
-      - Used internally and by the IOC to set velocity
+      - Used internally and by the IOC as the set position
       - | io: output
 
 
     * - HXX:HXSS:ROV:MMS:ALL_H:PLC:fVelocity_RBV
       - ai
+      - Used internally and by the IOC to set velocity
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:ALL_H:PLC:fVelocity
+      - ao
       - Used internally and by the IOC to set velocity
       - | io: output
 
@@ -1027,26 +748,26 @@ Database Records
       - | io: input
 
 
-    * - HXX:HXSS:ROV:MMS:ALL_H:PLC:nCmdData
-      - longout
-      - Used internally and by the IOC to pass extra args
-      - | io: output
-
-
     * - HXX:HXSS:ROV:MMS:ALL_H:PLC:nCmdData_RBV
       - longin
       - Used internally and by the IOC to pass extra args
       - | io: output
 
 
-    * - HXX:HXSS:ROV:MMS:ALL_H:PLC:nCommand
+    * - HXX:HXSS:ROV:MMS:ALL_H:PLC:nCmdData
       - longout
-      - Used internally and by the IOC to pick move type
+      - Used internally and by the IOC to pass extra args
       - | io: output
 
 
     * - HXX:HXSS:ROV:MMS:ALL_H:PLC:nCommand_RBV
       - longin
+      - Used internally and by the IOC to pick move type
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:ALL_H:PLC:nCommand
+      - longout
       - Used internally and by the IOC to pick move type
       - | io: output
 
@@ -1129,16 +850,16 @@ Database Records
         | io: input
 
 
-    * - HXX:HXSS:ROV:MMS:ALL_V:PLC:bEnable
-      - bo
+    * - HXX:HXSS:ROV:MMS:ALL_V:PLC:bEnable_RBV
+      - bi
       - Used internally to request enables
       - | field: ONAM TRUE
         | field: ZNAM FALSE
         | io: output
 
 
-    * - HXX:HXSS:ROV:MMS:ALL_V:PLC:bEnable_RBV
-      - bi
+    * - HXX:HXSS:ROV:MMS:ALL_V:PLC:bEnable
+      - bo
       - Used internally to request enables
       - | field: ONAM TRUE
         | field: ZNAM FALSE
@@ -1161,16 +882,16 @@ Database Records
         | io: input
 
 
-    * - HXX:HXSS:ROV:MMS:ALL_V:PLC:bExecute
-      - bo
+    * - HXX:HXSS:ROV:MMS:ALL_V:PLC:bExecute_RBV
+      - bi
       - Used internally and by the IOC to start or stop
       - | field: ONAM TRUE
         | field: ZNAM FALSE
         | io: output
 
 
-    * - HXX:HXSS:ROV:MMS:ALL_V:PLC:bExecute_RBV
-      - bi
+    * - HXX:HXSS:ROV:MMS:ALL_V:PLC:bExecute
+      - bo
       - Used internally and by the IOC to start or stop
       - | field: ONAM TRUE
         | field: ZNAM FALSE
@@ -1241,14 +962,6 @@ Database Records
         | io: input
 
 
-    * - HXX:HXSS:ROV:MMS:ALL_V:PLC:bReset
-      - bo
-      - Used internally to reset errors
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: output
-
-
     * - HXX:HXSS:ROV:MMS:ALL_V:PLC:bReset_RBV
       - bi
       - Used internally to reset errors
@@ -1257,10 +970,12 @@ Database Records
         | io: output
 
 
-    * - HXX:HXSS:ROV:MMS:ALL_V:PLC:fAcceleration
-      - ao
-      - Used internally and by the IOC to set acceleration
-      - | io: output
+    * - HXX:HXSS:ROV:MMS:ALL_V:PLC:bReset
+      - bo
+      - Used internally to reset errors
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
 
 
     * - HXX:HXSS:ROV:MMS:ALL_V:PLC:fAcceleration_RBV
@@ -1269,9 +984,9 @@ Database Records
       - | io: output
 
 
-    * - HXX:HXSS:ROV:MMS:ALL_V:PLC:fDeceleration
+    * - HXX:HXSS:ROV:MMS:ALL_V:PLC:fAcceleration
       - ao
-      - Used internally and by the IOC to set deceleration
+      - Used internally and by the IOC to set acceleration
       - | io: output
 
 
@@ -1281,9 +996,9 @@ Database Records
       - | io: output
 
 
-    * - HXX:HXSS:ROV:MMS:ALL_V:PLC:fHomePosition
+    * - HXX:HXSS:ROV:MMS:ALL_V:PLC:fDeceleration
       - ao
-      - Used internally and by the IOC to pick home position
+      - Used internally and by the IOC to set deceleration
       - | io: output
 
 
@@ -1293,9 +1008,9 @@ Database Records
       - | io: output
 
 
-    * - HXX:HXSS:ROV:MMS:ALL_V:PLC:fPosition
+    * - HXX:HXSS:ROV:MMS:ALL_V:PLC:fHomePosition
       - ao
-      - Used internally and by the IOC as the set position
+      - Used internally and by the IOC to pick home position
       - | io: output
 
 
@@ -1305,14 +1020,20 @@ Database Records
       - | io: output
 
 
-    * - HXX:HXSS:ROV:MMS:ALL_V:PLC:fVelocity
+    * - HXX:HXSS:ROV:MMS:ALL_V:PLC:fPosition
       - ao
-      - Used internally and by the IOC to set velocity
+      - Used internally and by the IOC as the set position
       - | io: output
 
 
     * - HXX:HXSS:ROV:MMS:ALL_V:PLC:fVelocity_RBV
       - ai
+      - Used internally and by the IOC to set velocity
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:ALL_V:PLC:fVelocity
+      - ao
       - Used internally and by the IOC to set velocity
       - | io: output
 
@@ -1323,26 +1044,26 @@ Database Records
       - | io: input
 
 
-    * - HXX:HXSS:ROV:MMS:ALL_V:PLC:nCmdData
-      - longout
-      - Used internally and by the IOC to pass extra args
-      - | io: output
-
-
     * - HXX:HXSS:ROV:MMS:ALL_V:PLC:nCmdData_RBV
       - longin
       - Used internally and by the IOC to pass extra args
       - | io: output
 
 
-    * - HXX:HXSS:ROV:MMS:ALL_V:PLC:nCommand
+    * - HXX:HXSS:ROV:MMS:ALL_V:PLC:nCmdData
       - longout
-      - Used internally and by the IOC to pick move type
+      - Used internally and by the IOC to pass extra args
       - | io: output
 
 
     * - HXX:HXSS:ROV:MMS:ALL_V:PLC:nCommand_RBV
       - longin
+      - Used internally and by the IOC to pick move type
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:ALL_V:PLC:nCommand
+      - longout
       - Used internally and by the IOC to pick move type
       - | io: output
 
@@ -1372,894 +1093,6 @@ Database Records
 
 
     * - HXX:HXSS:ROV:MMS:ALL_V:PLC:sErrorMessage_RBV
-      - waveform
-      - Message to identify the error state
-      - | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:DET_H:PLC:bAllBackwardEnable_RBV
-      - bi
-      - Summary of axis permission to move backward
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:DET_H:PLC:bAllEnable_RBV
-      - bi
-      - Summary of axis permission to have power
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:DET_H:PLC:bAllForwardEnable_RBV
-      - bi
-      - Summary of axis permission to move forward
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:DET_H:PLC:bBrakeRelease_RBV
-      - bi
-      - TRUE if brake released
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:DET_H:PLC:bBusy_RBV
-      - bi
-      - TRUE if in the middle of a command
-      - | field: ONAM FALSE
-        | field: ZNAM TRUE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:DET_H:PLC:bDone_RBV
-      - bi
-      - TRUE if command finished successfully
-      - | field: ONAM FALSE
-        | field: ZNAM TRUE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:DET_H:PLC:bEnable
-      - bo
-      - Used internally to request enables
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:DET_H:PLC:bEnable_RBV
-      - bi
-      - Used internally to request enables
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:DET_H:PLC:bEnableDone_RBV
-      - bi
-      - TRUE if done enabling
-      - | field: ONAM FALSE
-        | field: ZNAM TRUE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:DET_H:PLC:bError_RBV
-      - bi
-      - TRUE if we
-      - | field: ONAM FALSE
-        | field: ZNAM TRUE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:DET_H:PLC:bExecute
-      - bo
-      - Used internally and by the IOC to start or stop
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:DET_H:PLC:bExecute_RBV
-      - bi
-      - Used internally and by the IOC to start or stop
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:DET_H:PLC:bGantryAxis_RBV
-      - bi
-      - TRUE if gantry EPS active
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:DET_H:PLC:bGantryBackwardEnable_RBV
-      - bi
-      - TRUE if gantry ok to move backward
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:DET_H:PLC:bGantryForwardEnable_RBV
-      - bi
-      - TRUE if gantry ok to move forward
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:DET_H:PLC:bHardwareEnable_RBV
-      - bi
-      - TRUE if STO not hit
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:DET_H:PLC:bHome_RBV
-      - bi
-      - TRUE if at homing switch
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:DET_H:PLC:bLimitBackwardEnable_RBV
-      - bi
-      - FALSE if reverse limit hit
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:DET_H:PLC:bLimitForwardEnable_RBV
-      - bi
-      - FALSE if forward limit hit
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:DET_H:PLC:bPowerSelf_RBV
-      - bi
-      - FALSE if axis is in PMPS
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:DET_H:PLC:bReset
-      - bo
-      - Used internally to reset errors
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:DET_H:PLC:bReset_RBV
-      - bi
-      - Used internally to reset errors
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:DET_H:PLC:fAcceleration
-      - ao
-      - Used internally and by the IOC to set acceleration
-      - | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:DET_H:PLC:fAcceleration_RBV
-      - ai
-      - Used internally and by the IOC to set acceleration
-      - | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:DET_H:PLC:fDeceleration
-      - ao
-      - Used internally and by the IOC to set deceleration
-      - | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:DET_H:PLC:fDeceleration_RBV
-      - ai
-      - Used internally and by the IOC to set deceleration
-      - | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:DET_H:PLC:fHomePosition
-      - ao
-      - Used internally and by the IOC to pick home position
-      - | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:DET_H:PLC:fHomePosition_RBV
-      - ai
-      - Used internally and by the IOC to pick home position
-      - | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:DET_H:PLC:fPosition
-      - ao
-      - Used internally and by the IOC as the set position
-      - | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:DET_H:PLC:fPosition_RBV
-      - ai
-      - Used internally and by the IOC as the set position
-      - | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:DET_H:PLC:fVelocity
-      - ao
-      - Used internally and by the IOC to set velocity
-      - | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:DET_H:PLC:fVelocity_RBV
-      - ai
-      - Used internally and by the IOC to set velocity
-      - | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:DET_H:PLC:nBrakeMode_RBV
-      - mbbi
-      - Describes when the brake will be released
-      - | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:DET_H:PLC:nCmdData
-      - longout
-      - Used internally and by the IOC to pass extra args
-      - | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:DET_H:PLC:nCmdData_RBV
-      - longin
-      - Used internally and by the IOC to pass extra args
-      - | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:DET_H:PLC:nCommand
-      - longout
-      - Used internally and by the IOC to pick move type
-      - | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:DET_H:PLC:nCommand_RBV
-      - longin
-      - Used internally and by the IOC to pick move type
-      - | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:DET_H:PLC:nEnableMode_RBV
-      - mbbi
-      - Describes when the axis will automatically get power
-      - | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:DET_H:PLC:nErrorId_RBV
-      - longin
-      - Error code if nonzero
-      - | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:DET_H:PLC:nHomingMode_RBV
-      - mbbi
-      - Describes our homing strategy
-      - | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:DET_H:PLC:nMotionAxisID_RBV
-      - longin
-      - Unique ID assigned to each axis in the NC
-      - | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:DET_H:PLC:sErrorMessage_RBV
-      - waveform
-      - Message to identify the error state
-      - | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:DET_V:PLC:bAllBackwardEnable_RBV
-      - bi
-      - Summary of axis permission to move backward
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:DET_V:PLC:bAllEnable_RBV
-      - bi
-      - Summary of axis permission to have power
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:DET_V:PLC:bAllForwardEnable_RBV
-      - bi
-      - Summary of axis permission to move forward
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:DET_V:PLC:bBrakeRelease_RBV
-      - bi
-      - TRUE if brake released
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:DET_V:PLC:bBusy_RBV
-      - bi
-      - TRUE if in the middle of a command
-      - | field: ONAM FALSE
-        | field: ZNAM TRUE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:DET_V:PLC:bDone_RBV
-      - bi
-      - TRUE if command finished successfully
-      - | field: ONAM FALSE
-        | field: ZNAM TRUE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:DET_V:PLC:bEnable
-      - bo
-      - Used internally to request enables
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:DET_V:PLC:bEnable_RBV
-      - bi
-      - Used internally to request enables
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:DET_V:PLC:bEnableDone_RBV
-      - bi
-      - TRUE if done enabling
-      - | field: ONAM FALSE
-        | field: ZNAM TRUE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:DET_V:PLC:bError_RBV
-      - bi
-      - TRUE if we
-      - | field: ONAM FALSE
-        | field: ZNAM TRUE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:DET_V:PLC:bExecute
-      - bo
-      - Used internally and by the IOC to start or stop
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:DET_V:PLC:bExecute_RBV
-      - bi
-      - Used internally and by the IOC to start or stop
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:DET_V:PLC:bGantryAxis_RBV
-      - bi
-      - TRUE if gantry EPS active
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:DET_V:PLC:bGantryBackwardEnable_RBV
-      - bi
-      - TRUE if gantry ok to move backward
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:DET_V:PLC:bGantryForwardEnable_RBV
-      - bi
-      - TRUE if gantry ok to move forward
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:DET_V:PLC:bHardwareEnable_RBV
-      - bi
-      - TRUE if STO not hit
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:DET_V:PLC:bHome_RBV
-      - bi
-      - TRUE if at homing switch
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:DET_V:PLC:bLimitBackwardEnable_RBV
-      - bi
-      - FALSE if reverse limit hit
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:DET_V:PLC:bLimitForwardEnable_RBV
-      - bi
-      - FALSE if forward limit hit
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:DET_V:PLC:bPowerSelf_RBV
-      - bi
-      - FALSE if axis is in PMPS
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:DET_V:PLC:bReset
-      - bo
-      - Used internally to reset errors
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:DET_V:PLC:bReset_RBV
-      - bi
-      - Used internally to reset errors
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:DET_V:PLC:fAcceleration
-      - ao
-      - Used internally and by the IOC to set acceleration
-      - | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:DET_V:PLC:fAcceleration_RBV
-      - ai
-      - Used internally and by the IOC to set acceleration
-      - | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:DET_V:PLC:fDeceleration
-      - ao
-      - Used internally and by the IOC to set deceleration
-      - | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:DET_V:PLC:fDeceleration_RBV
-      - ai
-      - Used internally and by the IOC to set deceleration
-      - | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:DET_V:PLC:fHomePosition
-      - ao
-      - Used internally and by the IOC to pick home position
-      - | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:DET_V:PLC:fHomePosition_RBV
-      - ai
-      - Used internally and by the IOC to pick home position
-      - | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:DET_V:PLC:fPosition
-      - ao
-      - Used internally and by the IOC as the set position
-      - | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:DET_V:PLC:fPosition_RBV
-      - ai
-      - Used internally and by the IOC as the set position
-      - | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:DET_V:PLC:fVelocity
-      - ao
-      - Used internally and by the IOC to set velocity
-      - | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:DET_V:PLC:fVelocity_RBV
-      - ai
-      - Used internally and by the IOC to set velocity
-      - | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:DET_V:PLC:nBrakeMode_RBV
-      - mbbi
-      - Describes when the brake will be released
-      - | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:DET_V:PLC:nCmdData
-      - longout
-      - Used internally and by the IOC to pass extra args
-      - | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:DET_V:PLC:nCmdData_RBV
-      - longin
-      - Used internally and by the IOC to pass extra args
-      - | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:DET_V:PLC:nCommand
-      - longout
-      - Used internally and by the IOC to pick move type
-      - | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:DET_V:PLC:nCommand_RBV
-      - longin
-      - Used internally and by the IOC to pick move type
-      - | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:DET_V:PLC:nEnableMode_RBV
-      - mbbi
-      - Describes when the axis will automatically get power
-      - | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:DET_V:PLC:nErrorId_RBV
-      - longin
-      - Error code if nonzero
-      - | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:DET_V:PLC:nHomingMode_RBV
-      - mbbi
-      - Describes our homing strategy
-      - | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:DET_V:PLC:nMotionAxisID_RBV
-      - longin
-      - Unique ID assigned to each axis in the NC
-      - | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:DET_V:PLC:sErrorMessage_RBV
-      - waveform
-      - Message to identify the error state
-      - | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:bAllBackwardEnable_RBV
-      - bi
-      - Summary of axis permission to move backward
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:bAllEnable_RBV
-      - bi
-      - Summary of axis permission to have power
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:bAllForwardEnable_RBV
-      - bi
-      - Summary of axis permission to move forward
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:bBrakeRelease_RBV
-      - bi
-      - TRUE if brake released
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:bBusy_RBV
-      - bi
-      - TRUE if in the middle of a command
-      - | field: ONAM FALSE
-        | field: ZNAM TRUE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:bDone_RBV
-      - bi
-      - TRUE if command finished successfully
-      - | field: ONAM FALSE
-        | field: ZNAM TRUE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:bEnable
-      - bo
-      - Used internally to request enables
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:bEnable_RBV
-      - bi
-      - Used internally to request enables
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:bEnableDone_RBV
-      - bi
-      - TRUE if done enabling
-      - | field: ONAM FALSE
-        | field: ZNAM TRUE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:bError_RBV
-      - bi
-      - TRUE if we
-      - | field: ONAM FALSE
-        | field: ZNAM TRUE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:bExecute
-      - bo
-      - Used internally and by the IOC to start or stop
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:bExecute_RBV
-      - bi
-      - Used internally and by the IOC to start or stop
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:bGantryAxis_RBV
-      - bi
-      - TRUE if gantry EPS active
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:bGantryBackwardEnable_RBV
-      - bi
-      - TRUE if gantry ok to move backward
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:bGantryForwardEnable_RBV
-      - bi
-      - TRUE if gantry ok to move forward
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:bHardwareEnable_RBV
-      - bi
-      - TRUE if STO not hit
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:bHome_RBV
-      - bi
-      - TRUE if at homing switch
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:bLimitBackwardEnable_RBV
-      - bi
-      - FALSE if reverse limit hit
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:bLimitForwardEnable_RBV
-      - bi
-      - FALSE if forward limit hit
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:bPowerSelf_RBV
-      - bi
-      - FALSE if axis is in PMPS
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:bReset
-      - bo
-      - Used internally to reset errors
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:bReset_RBV
-      - bi
-      - Used internally to reset errors
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:fAcceleration
-      - ao
-      - Used internally and by the IOC to set acceleration
-      - | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:fAcceleration_RBV
-      - ai
-      - Used internally and by the IOC to set acceleration
-      - | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:fDeceleration
-      - ao
-      - Used internally and by the IOC to set deceleration
-      - | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:fDeceleration_RBV
-      - ai
-      - Used internally and by the IOC to set deceleration
-      - | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:fHomePosition
-      - ao
-      - Used internally and by the IOC to pick home position
-      - | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:fHomePosition_RBV
-      - ai
-      - Used internally and by the IOC to pick home position
-      - | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:fPosition
-      - ao
-      - Used internally and by the IOC as the set position
-      - | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:fPosition_RBV
-      - ai
-      - Used internally and by the IOC as the set position
-      - | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:fVelocity
-      - ao
-      - Used internally and by the IOC to set velocity
-      - | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:fVelocity_RBV
-      - ai
-      - Used internally and by the IOC to set velocity
-      - | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:nBrakeMode_RBV
-      - mbbi
-      - Describes when the brake will be released
-      - | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:nCmdData
-      - longout
-      - Used internally and by the IOC to pass extra args
-      - | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:nCmdData_RBV
-      - longin
-      - Used internally and by the IOC to pass extra args
-      - | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:nCommand
-      - longout
-      - Used internally and by the IOC to pick move type
-      - | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:nCommand_RBV
-      - longin
-      - Used internally and by the IOC to pick move type
-      - | io: output
-
-
-    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:nEnableMode_RBV
-      - mbbi
-      - Describes when the axis will automatically get power
-      - | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:nErrorId_RBV
-      - longin
-      - Error code if nonzero
-      - | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:nHomingMode_RBV
-      - mbbi
-      - Describes our homing strategy
-      - | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:nMotionAxisID_RBV
-      - longin
-      - Unique ID assigned to each axis in the NC
-      - | io: input
-
-
-    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:sErrorMessage_RBV
       - waveform
       - Message to identify the error state
       - | io: input
@@ -2313,16 +1146,16 @@ Database Records
         | io: input
 
 
-    * - HXX:HXSS:ROV:MMS:XTAL_TH:PLC:bEnable
-      - bo
+    * - HXX:HXSS:ROV:MMS:XTAL_TH:PLC:bEnable_RBV
+      - bi
       - Used internally to request enables
       - | field: ONAM TRUE
         | field: ZNAM FALSE
         | io: output
 
 
-    * - HXX:HXSS:ROV:MMS:XTAL_TH:PLC:bEnable_RBV
-      - bi
+    * - HXX:HXSS:ROV:MMS:XTAL_TH:PLC:bEnable
+      - bo
       - Used internally to request enables
       - | field: ONAM TRUE
         | field: ZNAM FALSE
@@ -2345,16 +1178,16 @@ Database Records
         | io: input
 
 
-    * - HXX:HXSS:ROV:MMS:XTAL_TH:PLC:bExecute
-      - bo
+    * - HXX:HXSS:ROV:MMS:XTAL_TH:PLC:bExecute_RBV
+      - bi
       - Used internally and by the IOC to start or stop
       - | field: ONAM TRUE
         | field: ZNAM FALSE
         | io: output
 
 
-    * - HXX:HXSS:ROV:MMS:XTAL_TH:PLC:bExecute_RBV
-      - bi
+    * - HXX:HXSS:ROV:MMS:XTAL_TH:PLC:bExecute
+      - bo
       - Used internally and by the IOC to start or stop
       - | field: ONAM TRUE
         | field: ZNAM FALSE
@@ -2425,14 +1258,6 @@ Database Records
         | io: input
 
 
-    * - HXX:HXSS:ROV:MMS:XTAL_TH:PLC:bReset
-      - bo
-      - Used internally to reset errors
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: output
-
-
     * - HXX:HXSS:ROV:MMS:XTAL_TH:PLC:bReset_RBV
       - bi
       - Used internally to reset errors
@@ -2441,10 +1266,12 @@ Database Records
         | io: output
 
 
-    * - HXX:HXSS:ROV:MMS:XTAL_TH:PLC:fAcceleration
-      - ao
-      - Used internally and by the IOC to set acceleration
-      - | io: output
+    * - HXX:HXSS:ROV:MMS:XTAL_TH:PLC:bReset
+      - bo
+      - Used internally to reset errors
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
 
 
     * - HXX:HXSS:ROV:MMS:XTAL_TH:PLC:fAcceleration_RBV
@@ -2453,9 +1280,9 @@ Database Records
       - | io: output
 
 
-    * - HXX:HXSS:ROV:MMS:XTAL_TH:PLC:fDeceleration
+    * - HXX:HXSS:ROV:MMS:XTAL_TH:PLC:fAcceleration
       - ao
-      - Used internally and by the IOC to set deceleration
+      - Used internally and by the IOC to set acceleration
       - | io: output
 
 
@@ -2465,9 +1292,9 @@ Database Records
       - | io: output
 
 
-    * - HXX:HXSS:ROV:MMS:XTAL_TH:PLC:fHomePosition
+    * - HXX:HXSS:ROV:MMS:XTAL_TH:PLC:fDeceleration
       - ao
-      - Used internally and by the IOC to pick home position
+      - Used internally and by the IOC to set deceleration
       - | io: output
 
 
@@ -2477,9 +1304,9 @@ Database Records
       - | io: output
 
 
-    * - HXX:HXSS:ROV:MMS:XTAL_TH:PLC:fPosition
+    * - HXX:HXSS:ROV:MMS:XTAL_TH:PLC:fHomePosition
       - ao
-      - Used internally and by the IOC as the set position
+      - Used internally and by the IOC to pick home position
       - | io: output
 
 
@@ -2489,14 +1316,20 @@ Database Records
       - | io: output
 
 
-    * - HXX:HXSS:ROV:MMS:XTAL_TH:PLC:fVelocity
+    * - HXX:HXSS:ROV:MMS:XTAL_TH:PLC:fPosition
       - ao
-      - Used internally and by the IOC to set velocity
+      - Used internally and by the IOC as the set position
       - | io: output
 
 
     * - HXX:HXSS:ROV:MMS:XTAL_TH:PLC:fVelocity_RBV
       - ai
+      - Used internally and by the IOC to set velocity
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_TH:PLC:fVelocity
+      - ao
       - Used internally and by the IOC to set velocity
       - | io: output
 
@@ -2507,26 +1340,26 @@ Database Records
       - | io: input
 
 
-    * - HXX:HXSS:ROV:MMS:XTAL_TH:PLC:nCmdData
-      - longout
-      - Used internally and by the IOC to pass extra args
-      - | io: output
-
-
     * - HXX:HXSS:ROV:MMS:XTAL_TH:PLC:nCmdData_RBV
       - longin
       - Used internally and by the IOC to pass extra args
       - | io: output
 
 
-    * - HXX:HXSS:ROV:MMS:XTAL_TH:PLC:nCommand
+    * - HXX:HXSS:ROV:MMS:XTAL_TH:PLC:nCmdData
       - longout
-      - Used internally and by the IOC to pick move type
+      - Used internally and by the IOC to pass extra args
       - | io: output
 
 
     * - HXX:HXSS:ROV:MMS:XTAL_TH:PLC:nCommand_RBV
       - longin
+      - Used internally and by the IOC to pick move type
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_TH:PLC:nCommand
+      - longout
       - Used internally and by the IOC to pick move type
       - | io: output
 
@@ -2609,16 +1442,16 @@ Database Records
         | io: input
 
 
-    * - HXX:HXSS:ROV:MMS:XTAL_TTH:PLC:bEnable
-      - bo
+    * - HXX:HXSS:ROV:MMS:XTAL_TTH:PLC:bEnable_RBV
+      - bi
       - Used internally to request enables
       - | field: ONAM TRUE
         | field: ZNAM FALSE
         | io: output
 
 
-    * - HXX:HXSS:ROV:MMS:XTAL_TTH:PLC:bEnable_RBV
-      - bi
+    * - HXX:HXSS:ROV:MMS:XTAL_TTH:PLC:bEnable
+      - bo
       - Used internally to request enables
       - | field: ONAM TRUE
         | field: ZNAM FALSE
@@ -2641,16 +1474,16 @@ Database Records
         | io: input
 
 
-    * - HXX:HXSS:ROV:MMS:XTAL_TTH:PLC:bExecute
-      - bo
+    * - HXX:HXSS:ROV:MMS:XTAL_TTH:PLC:bExecute_RBV
+      - bi
       - Used internally and by the IOC to start or stop
       - | field: ONAM TRUE
         | field: ZNAM FALSE
         | io: output
 
 
-    * - HXX:HXSS:ROV:MMS:XTAL_TTH:PLC:bExecute_RBV
-      - bi
+    * - HXX:HXSS:ROV:MMS:XTAL_TTH:PLC:bExecute
+      - bo
       - Used internally and by the IOC to start or stop
       - | field: ONAM TRUE
         | field: ZNAM FALSE
@@ -2721,14 +1554,6 @@ Database Records
         | io: input
 
 
-    * - HXX:HXSS:ROV:MMS:XTAL_TTH:PLC:bReset
-      - bo
-      - Used internally to reset errors
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: output
-
-
     * - HXX:HXSS:ROV:MMS:XTAL_TTH:PLC:bReset_RBV
       - bi
       - Used internally to reset errors
@@ -2737,10 +1562,12 @@ Database Records
         | io: output
 
 
-    * - HXX:HXSS:ROV:MMS:XTAL_TTH:PLC:fAcceleration
-      - ao
-      - Used internally and by the IOC to set acceleration
-      - | io: output
+    * - HXX:HXSS:ROV:MMS:XTAL_TTH:PLC:bReset
+      - bo
+      - Used internally to reset errors
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
 
 
     * - HXX:HXSS:ROV:MMS:XTAL_TTH:PLC:fAcceleration_RBV
@@ -2749,9 +1576,9 @@ Database Records
       - | io: output
 
 
-    * - HXX:HXSS:ROV:MMS:XTAL_TTH:PLC:fDeceleration
+    * - HXX:HXSS:ROV:MMS:XTAL_TTH:PLC:fAcceleration
       - ao
-      - Used internally and by the IOC to set deceleration
+      - Used internally and by the IOC to set acceleration
       - | io: output
 
 
@@ -2761,9 +1588,9 @@ Database Records
       - | io: output
 
 
-    * - HXX:HXSS:ROV:MMS:XTAL_TTH:PLC:fHomePosition
+    * - HXX:HXSS:ROV:MMS:XTAL_TTH:PLC:fDeceleration
       - ao
-      - Used internally and by the IOC to pick home position
+      - Used internally and by the IOC to set deceleration
       - | io: output
 
 
@@ -2773,9 +1600,9 @@ Database Records
       - | io: output
 
 
-    * - HXX:HXSS:ROV:MMS:XTAL_TTH:PLC:fPosition
+    * - HXX:HXSS:ROV:MMS:XTAL_TTH:PLC:fHomePosition
       - ao
-      - Used internally and by the IOC as the set position
+      - Used internally and by the IOC to pick home position
       - | io: output
 
 
@@ -2785,14 +1612,20 @@ Database Records
       - | io: output
 
 
-    * - HXX:HXSS:ROV:MMS:XTAL_TTH:PLC:fVelocity
+    * - HXX:HXSS:ROV:MMS:XTAL_TTH:PLC:fPosition
       - ao
-      - Used internally and by the IOC to set velocity
+      - Used internally and by the IOC as the set position
       - | io: output
 
 
     * - HXX:HXSS:ROV:MMS:XTAL_TTH:PLC:fVelocity_RBV
       - ai
+      - Used internally and by the IOC to set velocity
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_TTH:PLC:fVelocity
+      - ao
       - Used internally and by the IOC to set velocity
       - | io: output
 
@@ -2803,26 +1636,26 @@ Database Records
       - | io: input
 
 
-    * - HXX:HXSS:ROV:MMS:XTAL_TTH:PLC:nCmdData
-      - longout
-      - Used internally and by the IOC to pass extra args
-      - | io: output
-
-
     * - HXX:HXSS:ROV:MMS:XTAL_TTH:PLC:nCmdData_RBV
       - longin
       - Used internally and by the IOC to pass extra args
       - | io: output
 
 
-    * - HXX:HXSS:ROV:MMS:XTAL_TTH:PLC:nCommand
+    * - HXX:HXSS:ROV:MMS:XTAL_TTH:PLC:nCmdData
       - longout
-      - Used internally and by the IOC to pick move type
+      - Used internally and by the IOC to pass extra args
       - | io: output
 
 
     * - HXX:HXSS:ROV:MMS:XTAL_TTH:PLC:nCommand_RBV
       - longin
+      - Used internally and by the IOC to pick move type
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_TTH:PLC:nCommand
+      - longout
       - Used internally and by the IOC to pick move type
       - | io: output
 
@@ -2852,6 +1685,302 @@ Database Records
 
 
     * - HXX:HXSS:ROV:MMS:XTAL_TTH:PLC:sErrorMessage_RBV
+      - waveform
+      - Message to identify the error state
+      - | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:bAllBackwardEnable_RBV
+      - bi
+      - Summary of axis permission to move backward
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:bAllEnable_RBV
+      - bi
+      - Summary of axis permission to have power
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:bAllForwardEnable_RBV
+      - bi
+      - Summary of axis permission to move forward
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:bBrakeRelease_RBV
+      - bi
+      - TRUE if brake released
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:bBusy_RBV
+      - bi
+      - TRUE if in the middle of a command
+      - | field: ONAM FALSE
+        | field: ZNAM TRUE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:bDone_RBV
+      - bi
+      - TRUE if command finished successfully
+      - | field: ONAM FALSE
+        | field: ZNAM TRUE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:bEnable_RBV
+      - bi
+      - Used internally to request enables
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:bEnable
+      - bo
+      - Used internally to request enables
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:bEnableDone_RBV
+      - bi
+      - TRUE if done enabling
+      - | field: ONAM FALSE
+        | field: ZNAM TRUE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:bError_RBV
+      - bi
+      - TRUE if we
+      - | field: ONAM FALSE
+        | field: ZNAM TRUE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:bExecute_RBV
+      - bi
+      - Used internally and by the IOC to start or stop
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:bExecute
+      - bo
+      - Used internally and by the IOC to start or stop
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:bGantryAxis_RBV
+      - bi
+      - TRUE if gantry EPS active
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:bGantryBackwardEnable_RBV
+      - bi
+      - TRUE if gantry ok to move backward
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:bGantryForwardEnable_RBV
+      - bi
+      - TRUE if gantry ok to move forward
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:bHardwareEnable_RBV
+      - bi
+      - TRUE if STO not hit
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:bHome_RBV
+      - bi
+      - TRUE if at homing switch
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:bLimitBackwardEnable_RBV
+      - bi
+      - FALSE if reverse limit hit
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:bLimitForwardEnable_RBV
+      - bi
+      - FALSE if forward limit hit
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:bPowerSelf_RBV
+      - bi
+      - FALSE if axis is in PMPS
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:bReset_RBV
+      - bi
+      - Used internally to reset errors
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:bReset
+      - bo
+      - Used internally to reset errors
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:fAcceleration_RBV
+      - ai
+      - Used internally and by the IOC to set acceleration
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:fAcceleration
+      - ao
+      - Used internally and by the IOC to set acceleration
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:fDeceleration_RBV
+      - ai
+      - Used internally and by the IOC to set deceleration
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:fDeceleration
+      - ao
+      - Used internally and by the IOC to set deceleration
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:fHomePosition_RBV
+      - ai
+      - Used internally and by the IOC to pick home position
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:fHomePosition
+      - ao
+      - Used internally and by the IOC to pick home position
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:fPosition_RBV
+      - ai
+      - Used internally and by the IOC as the set position
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:fPosition
+      - ao
+      - Used internally and by the IOC as the set position
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:fVelocity_RBV
+      - ai
+      - Used internally and by the IOC to set velocity
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:fVelocity
+      - ao
+      - Used internally and by the IOC to set velocity
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:nBrakeMode_RBV
+      - mbbi
+      - Describes when the brake will be released
+      - | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:nCmdData_RBV
+      - longin
+      - Used internally and by the IOC to pass extra args
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:nCmdData
+      - longout
+      - Used internally and by the IOC to pass extra args
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:nCommand_RBV
+      - longin
+      - Used internally and by the IOC to pick move type
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:nCommand
+      - longout
+      - Used internally and by the IOC to pick move type
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:nEnableMode_RBV
+      - mbbi
+      - Describes when the axis will automatically get power
+      - | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:nErrorId_RBV
+      - longin
+      - Error code if nonzero
+      - | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:nHomingMode_RBV
+      - mbbi
+      - Describes our homing strategy
+      - | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:nMotionAxisID_RBV
+      - longin
+      - Unique ID assigned to each axis in the NC
+      - | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_H:PLC:sErrorMessage_RBV
       - waveform
       - Message to identify the error state
       - | io: input
@@ -2905,16 +2034,16 @@ Database Records
         | io: input
 
 
-    * - HXX:HXSS:ROV:MMS:XTAL_V:PLC:bEnable
-      - bo
+    * - HXX:HXSS:ROV:MMS:XTAL_V:PLC:bEnable_RBV
+      - bi
       - Used internally to request enables
       - | field: ONAM TRUE
         | field: ZNAM FALSE
         | io: output
 
 
-    * - HXX:HXSS:ROV:MMS:XTAL_V:PLC:bEnable_RBV
-      - bi
+    * - HXX:HXSS:ROV:MMS:XTAL_V:PLC:bEnable
+      - bo
       - Used internally to request enables
       - | field: ONAM TRUE
         | field: ZNAM FALSE
@@ -2937,16 +2066,16 @@ Database Records
         | io: input
 
 
-    * - HXX:HXSS:ROV:MMS:XTAL_V:PLC:bExecute
-      - bo
+    * - HXX:HXSS:ROV:MMS:XTAL_V:PLC:bExecute_RBV
+      - bi
       - Used internally and by the IOC to start or stop
       - | field: ONAM TRUE
         | field: ZNAM FALSE
         | io: output
 
 
-    * - HXX:HXSS:ROV:MMS:XTAL_V:PLC:bExecute_RBV
-      - bi
+    * - HXX:HXSS:ROV:MMS:XTAL_V:PLC:bExecute
+      - bo
       - Used internally and by the IOC to start or stop
       - | field: ONAM TRUE
         | field: ZNAM FALSE
@@ -3017,14 +2146,6 @@ Database Records
         | io: input
 
 
-    * - HXX:HXSS:ROV:MMS:XTAL_V:PLC:bReset
-      - bo
-      - Used internally to reset errors
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: output
-
-
     * - HXX:HXSS:ROV:MMS:XTAL_V:PLC:bReset_RBV
       - bi
       - Used internally to reset errors
@@ -3033,10 +2154,12 @@ Database Records
         | io: output
 
 
-    * - HXX:HXSS:ROV:MMS:XTAL_V:PLC:fAcceleration
-      - ao
-      - Used internally and by the IOC to set acceleration
-      - | io: output
+    * - HXX:HXSS:ROV:MMS:XTAL_V:PLC:bReset
+      - bo
+      - Used internally to reset errors
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
 
 
     * - HXX:HXSS:ROV:MMS:XTAL_V:PLC:fAcceleration_RBV
@@ -3045,9 +2168,9 @@ Database Records
       - | io: output
 
 
-    * - HXX:HXSS:ROV:MMS:XTAL_V:PLC:fDeceleration
+    * - HXX:HXSS:ROV:MMS:XTAL_V:PLC:fAcceleration
       - ao
-      - Used internally and by the IOC to set deceleration
+      - Used internally and by the IOC to set acceleration
       - | io: output
 
 
@@ -3057,9 +2180,9 @@ Database Records
       - | io: output
 
 
-    * - HXX:HXSS:ROV:MMS:XTAL_V:PLC:fHomePosition
+    * - HXX:HXSS:ROV:MMS:XTAL_V:PLC:fDeceleration
       - ao
-      - Used internally and by the IOC to pick home position
+      - Used internally and by the IOC to set deceleration
       - | io: output
 
 
@@ -3069,9 +2192,9 @@ Database Records
       - | io: output
 
 
-    * - HXX:HXSS:ROV:MMS:XTAL_V:PLC:fPosition
+    * - HXX:HXSS:ROV:MMS:XTAL_V:PLC:fHomePosition
       - ao
-      - Used internally and by the IOC as the set position
+      - Used internally and by the IOC to pick home position
       - | io: output
 
 
@@ -3081,14 +2204,20 @@ Database Records
       - | io: output
 
 
-    * - HXX:HXSS:ROV:MMS:XTAL_V:PLC:fVelocity
+    * - HXX:HXSS:ROV:MMS:XTAL_V:PLC:fPosition
       - ao
-      - Used internally and by the IOC to set velocity
+      - Used internally and by the IOC as the set position
       - | io: output
 
 
     * - HXX:HXSS:ROV:MMS:XTAL_V:PLC:fVelocity_RBV
       - ai
+      - Used internally and by the IOC to set velocity
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_V:PLC:fVelocity
+      - ao
       - Used internally and by the IOC to set velocity
       - | io: output
 
@@ -3099,26 +2228,26 @@ Database Records
       - | io: input
 
 
-    * - HXX:HXSS:ROV:MMS:XTAL_V:PLC:nCmdData
-      - longout
-      - Used internally and by the IOC to pass extra args
-      - | io: output
-
-
     * - HXX:HXSS:ROV:MMS:XTAL_V:PLC:nCmdData_RBV
       - longin
       - Used internally and by the IOC to pass extra args
       - | io: output
 
 
-    * - HXX:HXSS:ROV:MMS:XTAL_V:PLC:nCommand
+    * - HXX:HXSS:ROV:MMS:XTAL_V:PLC:nCmdData
       - longout
-      - Used internally and by the IOC to pick move type
+      - Used internally and by the IOC to pass extra args
       - | io: output
 
 
     * - HXX:HXSS:ROV:MMS:XTAL_V:PLC:nCommand_RBV
       - longin
+      - Used internally and by the IOC to pick move type
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:XTAL_V:PLC:nCommand
+      - longout
       - Used internally and by the IOC to pick move type
       - | io: output
 
@@ -3151,6 +2280,877 @@ Database Records
       - waveform
       - Message to identify the error state
       - | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:DET_H:PLC:bAllBackwardEnable_RBV
+      - bi
+      - Summary of axis permission to move backward
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:DET_H:PLC:bAllEnable_RBV
+      - bi
+      - Summary of axis permission to have power
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:DET_H:PLC:bAllForwardEnable_RBV
+      - bi
+      - Summary of axis permission to move forward
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:DET_H:PLC:bBrakeRelease_RBV
+      - bi
+      - TRUE if brake released
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:DET_H:PLC:bBusy_RBV
+      - bi
+      - TRUE if in the middle of a command
+      - | field: ONAM FALSE
+        | field: ZNAM TRUE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:DET_H:PLC:bDone_RBV
+      - bi
+      - TRUE if command finished successfully
+      - | field: ONAM FALSE
+        | field: ZNAM TRUE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:DET_H:PLC:bEnable_RBV
+      - bi
+      - Used internally to request enables
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:DET_H:PLC:bEnable
+      - bo
+      - Used internally to request enables
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:DET_H:PLC:bEnableDone_RBV
+      - bi
+      - TRUE if done enabling
+      - | field: ONAM FALSE
+        | field: ZNAM TRUE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:DET_H:PLC:bError_RBV
+      - bi
+      - TRUE if we
+      - | field: ONAM FALSE
+        | field: ZNAM TRUE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:DET_H:PLC:bExecute_RBV
+      - bi
+      - Used internally and by the IOC to start or stop
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:DET_H:PLC:bExecute
+      - bo
+      - Used internally and by the IOC to start or stop
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:DET_H:PLC:bGantryAxis_RBV
+      - bi
+      - TRUE if gantry EPS active
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:DET_H:PLC:bGantryBackwardEnable_RBV
+      - bi
+      - TRUE if gantry ok to move backward
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:DET_H:PLC:bGantryForwardEnable_RBV
+      - bi
+      - TRUE if gantry ok to move forward
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:DET_H:PLC:bHardwareEnable_RBV
+      - bi
+      - TRUE if STO not hit
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:DET_H:PLC:bHome_RBV
+      - bi
+      - TRUE if at homing switch
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:DET_H:PLC:bLimitBackwardEnable_RBV
+      - bi
+      - FALSE if reverse limit hit
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:DET_H:PLC:bLimitForwardEnable_RBV
+      - bi
+      - FALSE if forward limit hit
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:DET_H:PLC:bPowerSelf_RBV
+      - bi
+      - FALSE if axis is in PMPS
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:DET_H:PLC:bReset_RBV
+      - bi
+      - Used internally to reset errors
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:DET_H:PLC:bReset
+      - bo
+      - Used internally to reset errors
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:DET_H:PLC:fAcceleration_RBV
+      - ai
+      - Used internally and by the IOC to set acceleration
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:DET_H:PLC:fAcceleration
+      - ao
+      - Used internally and by the IOC to set acceleration
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:DET_H:PLC:fDeceleration_RBV
+      - ai
+      - Used internally and by the IOC to set deceleration
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:DET_H:PLC:fDeceleration
+      - ao
+      - Used internally and by the IOC to set deceleration
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:DET_H:PLC:fHomePosition_RBV
+      - ai
+      - Used internally and by the IOC to pick home position
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:DET_H:PLC:fHomePosition
+      - ao
+      - Used internally and by the IOC to pick home position
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:DET_H:PLC:fPosition_RBV
+      - ai
+      - Used internally and by the IOC as the set position
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:DET_H:PLC:fPosition
+      - ao
+      - Used internally and by the IOC as the set position
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:DET_H:PLC:fVelocity_RBV
+      - ai
+      - Used internally and by the IOC to set velocity
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:DET_H:PLC:fVelocity
+      - ao
+      - Used internally and by the IOC to set velocity
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:DET_H:PLC:nBrakeMode_RBV
+      - mbbi
+      - Describes when the brake will be released
+      - | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:DET_H:PLC:nCmdData_RBV
+      - longin
+      - Used internally and by the IOC to pass extra args
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:DET_H:PLC:nCmdData
+      - longout
+      - Used internally and by the IOC to pass extra args
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:DET_H:PLC:nCommand_RBV
+      - longin
+      - Used internally and by the IOC to pick move type
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:DET_H:PLC:nCommand
+      - longout
+      - Used internally and by the IOC to pick move type
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:DET_H:PLC:nEnableMode_RBV
+      - mbbi
+      - Describes when the axis will automatically get power
+      - | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:DET_H:PLC:nErrorId_RBV
+      - longin
+      - Error code if nonzero
+      - | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:DET_H:PLC:nHomingMode_RBV
+      - mbbi
+      - Describes our homing strategy
+      - | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:DET_H:PLC:nMotionAxisID_RBV
+      - longin
+      - Unique ID assigned to each axis in the NC
+      - | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:DET_H:PLC:sErrorMessage_RBV
+      - waveform
+      - Message to identify the error state
+      - | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:DET_V:PLC:bAllBackwardEnable_RBV
+      - bi
+      - Summary of axis permission to move backward
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:DET_V:PLC:bAllEnable_RBV
+      - bi
+      - Summary of axis permission to have power
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:DET_V:PLC:bAllForwardEnable_RBV
+      - bi
+      - Summary of axis permission to move forward
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:DET_V:PLC:bBrakeRelease_RBV
+      - bi
+      - TRUE if brake released
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:DET_V:PLC:bBusy_RBV
+      - bi
+      - TRUE if in the middle of a command
+      - | field: ONAM FALSE
+        | field: ZNAM TRUE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:DET_V:PLC:bDone_RBV
+      - bi
+      - TRUE if command finished successfully
+      - | field: ONAM FALSE
+        | field: ZNAM TRUE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:DET_V:PLC:bEnable_RBV
+      - bi
+      - Used internally to request enables
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:DET_V:PLC:bEnable
+      - bo
+      - Used internally to request enables
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:DET_V:PLC:bEnableDone_RBV
+      - bi
+      - TRUE if done enabling
+      - | field: ONAM FALSE
+        | field: ZNAM TRUE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:DET_V:PLC:bError_RBV
+      - bi
+      - TRUE if we
+      - | field: ONAM FALSE
+        | field: ZNAM TRUE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:DET_V:PLC:bExecute_RBV
+      - bi
+      - Used internally and by the IOC to start or stop
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:DET_V:PLC:bExecute
+      - bo
+      - Used internally and by the IOC to start or stop
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:DET_V:PLC:bGantryAxis_RBV
+      - bi
+      - TRUE if gantry EPS active
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:DET_V:PLC:bGantryBackwardEnable_RBV
+      - bi
+      - TRUE if gantry ok to move backward
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:DET_V:PLC:bGantryForwardEnable_RBV
+      - bi
+      - TRUE if gantry ok to move forward
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:DET_V:PLC:bHardwareEnable_RBV
+      - bi
+      - TRUE if STO not hit
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:DET_V:PLC:bHome_RBV
+      - bi
+      - TRUE if at homing switch
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:DET_V:PLC:bLimitBackwardEnable_RBV
+      - bi
+      - FALSE if reverse limit hit
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:DET_V:PLC:bLimitForwardEnable_RBV
+      - bi
+      - FALSE if forward limit hit
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:DET_V:PLC:bPowerSelf_RBV
+      - bi
+      - FALSE if axis is in PMPS
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:DET_V:PLC:bReset_RBV
+      - bi
+      - Used internally to reset errors
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:DET_V:PLC:bReset
+      - bo
+      - Used internally to reset errors
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:DET_V:PLC:fAcceleration_RBV
+      - ai
+      - Used internally and by the IOC to set acceleration
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:DET_V:PLC:fAcceleration
+      - ao
+      - Used internally and by the IOC to set acceleration
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:DET_V:PLC:fDeceleration_RBV
+      - ai
+      - Used internally and by the IOC to set deceleration
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:DET_V:PLC:fDeceleration
+      - ao
+      - Used internally and by the IOC to set deceleration
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:DET_V:PLC:fHomePosition_RBV
+      - ai
+      - Used internally and by the IOC to pick home position
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:DET_V:PLC:fHomePosition
+      - ao
+      - Used internally and by the IOC to pick home position
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:DET_V:PLC:fPosition_RBV
+      - ai
+      - Used internally and by the IOC as the set position
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:DET_V:PLC:fPosition
+      - ao
+      - Used internally and by the IOC as the set position
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:DET_V:PLC:fVelocity_RBV
+      - ai
+      - Used internally and by the IOC to set velocity
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:DET_V:PLC:fVelocity
+      - ao
+      - Used internally and by the IOC to set velocity
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:DET_V:PLC:nBrakeMode_RBV
+      - mbbi
+      - Describes when the brake will be released
+      - | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:DET_V:PLC:nCmdData_RBV
+      - longin
+      - Used internally and by the IOC to pass extra args
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:DET_V:PLC:nCmdData
+      - longout
+      - Used internally and by the IOC to pass extra args
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:DET_V:PLC:nCommand_RBV
+      - longin
+      - Used internally and by the IOC to pick move type
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:DET_V:PLC:nCommand
+      - longout
+      - Used internally and by the IOC to pick move type
+      - | io: output
+
+
+    * - HXX:HXSS:ROV:MMS:DET_V:PLC:nEnableMode_RBV
+      - mbbi
+      - Describes when the axis will automatically get power
+      - | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:DET_V:PLC:nErrorId_RBV
+      - longin
+      - Error code if nonzero
+      - | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:DET_V:PLC:nHomingMode_RBV
+      - mbbi
+      - Describes our homing strategy
+      - | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:DET_V:PLC:nMotionAxisID_RBV
+      - longin
+      - Unique ID assigned to each axis in the NC
+      - | io: input
+
+
+    * - HXX:HXSS:ROV:MMS:DET_V:PLC:sErrorMessage_RBV
+      - waveform
+      - Message to identify the error state
+      - | io: input
+
+
+    * - $(PREFIX)AccumulatedFastFaults_RBV
+      - longin
+      - PMPS_GVL.AccumulatedFF
+      - | io: input
+
+
+    * - $(PREFIX)SuccessfulPreemptions_RBV
+      - longin
+      - PMPS_GVL.SuccessfulPreemption
+      - | io: input
+
+
+    * - $(PREFIX)0RateBeamCnst:Veto_RBV
+      - waveform
+      - 0-rate beam constant
+      - | archive: 1s monitor
+        | io: input
+
+
+    * - $(PREFIX)0RateBeamCnst:Cohort_RBV
+      - longin
+      - Cohort inc on each arb cycle
+      - | archive: 1s monitor
+        | io: input
+
+
+    * - $(PREFIX)0RateBeamCnst:Rate_RBV
+      - longin
+      - 0-rate beam constant
+      - | archive: 1s monitor
+        | field: EGU Hz
+        | io: input
+
+
+    * - $(PREFIX)0RateBeamCnst:Transmission_RBV
+      - ai
+      - 0-rate beam constant
+      - | archive: 1s monitor
+        | field: HOPR 1
+        | field: LOPR 0
+        | field: PREC 2
+        | io: input
+
+
+    * - $(PREFIX)0RateBeamCnst:PhotonEnergyRanges_RBV
+      - longin
+      - 0-rate beam constant
+      - | archive: 1s monitor
+        | field: EGU eV
+        | io: input
+
+
+    * - $(PREFIX)0RateBeamCnst:Valid_RBV
+      - bi
+      - 0-rate beam constant
+      - | archive: 1s monitor
+        | io: input
+
+
+    * - $(PREFIX)FullBeamCnst:Veto_RBV
+      - waveform
+      - Full beam constant
+      - | archive: 1s monitor
+        | io: input
+
+
+    * - $(PREFIX)FullBeamCnst:Cohort_RBV
+      - longin
+      - Cohort inc on each arb cycle
+      - | archive: 1s monitor
+        | io: input
+
+
+    * - $(PREFIX)FullBeamCnst:Rate_RBV
+      - longin
+      - Full beam constant
+      - | archive: 1s monitor
+        | field: EGU Hz
+        | io: input
+
+
+    * - $(PREFIX)FullBeamCnst:Transmission_RBV
+      - ai
+      - Full beam constant
+      - | archive: 1s monitor
+        | field: HOPR 1
+        | field: LOPR 0
+        | field: PREC 2
+        | io: input
+
+
+    * - $(PREFIX)FullBeamCnst:PhotonEnergyRanges_RBV
+      - longin
+      - Full beam constant
+      - | archive: 1s monitor
+        | field: EGU eV
+        | io: input
+
+
+    * - $(PREFIX)FullBeamCnst:Valid_RBV
+      - bi
+      - Full beam constant
+      - | archive: 1s monitor
+        | io: input
+
+
+    * - $(PREFIX)SafeBeamCnst:Veto_RBV
+      - waveform
+      - Safe beam constant
+      - | archive: 1s monitor
+        | io: input
+
+
+    * - $(PREFIX)SafeBeamCnst:Cohort_RBV
+      - longin
+      - Cohort inc on each arb cycle
+      - | archive: 1s monitor
+        | io: input
+
+
+    * - $(PREFIX)SafeBeamCnst:Rate_RBV
+      - longin
+      - Safe beam constant
+      - | archive: 1s monitor
+        | field: EGU Hz
+        | io: input
+
+
+    * - $(PREFIX)SafeBeamCnst:Transmission_RBV
+      - ai
+      - Safe beam constant
+      - | archive: 1s monitor
+        | field: HOPR 1
+        | field: LOPR 0
+        | field: PREC 2
+        | io: input
+
+
+    * - $(PREFIX)SafeBeamCnst:PhotonEnergyRanges_RBV
+      - longin
+      - Safe beam constant
+      - | archive: 1s monitor
+        | field: EGU eV
+        | io: input
+
+
+    * - $(PREFIX)SafeBeamCnst:Valid_RBV
+      - bi
+      - Safe beam constant
+      - | archive: 1s monitor
+        | io: input
+
+
+    * - $(PREFIX)eVRangeCnst_RBV
+      - waveform
+      - Active eV Range constants
+      - | archive: 1s monitor
+        | field: EGU eV
+        | io: input
+
+
+    * - $(PREFIX)K:eVRangeCnst_RBV
+      - waveform
+      - eV Range constants
+      - | archive: 1s monitor
+        | field: EGU eV
+        | io: input
+
+
+    * - $(PREFIX)L:eVRangeCnst_RBV
+      - waveform
+      - eV Range constants
+      - | archive: 1s monitor
+        | field: EGU eV
+        | io: input
+
+
+    * - $(PREFIX)eVRangeHyst_RBV
+      - ai
+      - eV Range hystersis
+      - | archive: 1s monitor
+        | field: EGU eV
+        | io: input
+
+
+    * - $(PREFIX)CurrentBP:Veto_RBV
+      - waveform
+      - PMPS_GVL.stCurrentBeamParameters.aVetoDevices
+      - | archive: 1s monitor
+        | io: input
+
+
+    * - $(PREFIX)CurrentBP:Cohort_RBV
+      - longin
+      - Cohort inc on each arb cycle
+      - | archive: 1s monitor
+        | io: input
+
+
+    * - $(PREFIX)CurrentBP:Rate_RBV
+      - longin
+      - PMPS_GVL.stCurrentBeamParameters.nRate
+      - | archive: 1s monitor
+        | field: EGU Hz
+        | io: input
+
+
+    * - $(PREFIX)CurrentBP:Transmission_RBV
+      - ai
+      - PMPS_GVL.stCurrentBeamParameters.nTran
+      - | archive: 1s monitor
+        | field: HOPR 1
+        | field: LOPR 0
+        | field: PREC 2
+        | io: input
+
+
+    * - $(PREFIX)CurrentBP:PhotonEnergyRanges_RBV
+      - longin
+      - PMPS_GVL.stCurrentBeamParameters.neVRange
+      - | archive: 1s monitor
+        | field: EGU eV
+        | io: input
+
+
+    * - $(PREFIX)CurrentBP:Valid_RBV
+      - bi
+      - PMPS_GVL.stCurrentBeamParameters.xValid
+      - | archive: 1s monitor
+        | io: input
+
+
+    * - $(PREFIX)RequestedBP:Veto_RBV
+      - waveform
+      - PMPS_GVL.stRequestedBeamParameters.aVetoDevices
+      - | archive: 1s monitor
+        | io: input
+
+
+    * - $(PREFIX)RequestedBP:Cohort_RBV
+      - longin
+      - Cohort inc on each arb cycle
+      - | archive: 1s monitor
+        | io: input
+
+
+    * - $(PREFIX)RequestedBP:Rate_RBV
+      - longin
+      - PMPS_GVL.stRequestedBeamParameters.nRate
+      - | archive: 1s monitor
+        | field: EGU Hz
+        | io: input
+
+
+    * - $(PREFIX)RequestedBP:Transmission_RBV
+      - ai
+      - PMPS_GVL.stRequestedBeamParameters.nTran
+      - | archive: 1s monitor
+        | field: HOPR 1
+        | field: LOPR 0
+        | field: PREC 2
+        | io: input
+
+
+    * - $(PREFIX)RequestedBP:PhotonEnergyRanges_RBV
+      - longin
+      - PMPS_GVL.stRequestedBeamParameters.neVRange
+      - | archive: 1s monitor
+        | field: EGU eV
+        | io: input
+
+
+    * - $(PREFIX)RequestedBP:Valid_RBV
+      - bi
+      - PMPS_GVL.stRequestedBeamParameters.xValid
+      - | archive: 1s monitor
+        | io: input
 
 
 
